@@ -1,7 +1,17 @@
 ## Model
-* definition: the intermediate descriptions (documents) produced in the process.
+##### Definition: 
+* the intermediate descriptions (documents) produced in the process.
 > 过程中产生的中间描述（文件）。
-* features: 
+
+##### Features: 
 * Abstract view of a system.
 * Easy to understand.
 * A valuable means for communication.
+
+## Relationship between analysis models and design models
+* analysis models → design models
+* What if different languages are used for the two phases?
+> Information can not be accurately translated.
+* **OO technology**: use the same kinds of models in the two phases.
+    * The analysis models will be preserved and recognized in the design phase.
+    * Design phase: just adding some details.Thus, the course only covers the design phase.
