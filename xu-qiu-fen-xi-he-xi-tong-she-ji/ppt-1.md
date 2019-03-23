@@ -30,5 +30,14 @@
     * Models: to be covered in Chapter 2
     * Notations
     > Unified Modeling Language (UML)
+    
+#### A brief Introduction to UML
+* The dominant language in OO modeling
+* It can be used with a wide range of software processes
+* Views
+* Models
+    * Model elements
+* Diagrams
+
 
 
