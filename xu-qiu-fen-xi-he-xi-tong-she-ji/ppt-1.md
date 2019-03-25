@@ -47,10 +47,17 @@
     * Some types of diagrams can be used in both use case and design views
     > 某些类型的图表可以在用例和设计视图中使用
     * UML’s diagram types
-    | 左对齐标题 | 右对齐标题 |
-    | :------| ------: |
-    | 短文本 | 中等文本 |
-    | 稍微长一点的文本 | 短文本 |
+    | Diagram                 | View                   |
+    | ----------------------- | ---------------------- |
+    | 1 Use case diagram      | Use case view          |
+    | 2 Object diagram        | Use case & design view |
+    | 3 Sequence diagram      | Use case & design view |
+    | 4 Collaboration diagram | Use case & design view |
+    | 5 Class diagram         | Design view            |
+    | 6 Statechart diagram    | Design view            |
+    | 7 Activity diagram      | Design view            |
+    | 8 Component diagram     | Implementation view    |
+    | 9 Deployment diagram    | Deployment view        |
 
 
 
