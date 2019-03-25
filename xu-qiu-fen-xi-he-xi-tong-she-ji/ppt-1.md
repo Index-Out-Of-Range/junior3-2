@@ -44,6 +44,13 @@
 * Diagrams
     * A diagram presents certain aspect of the underlying system model.Diagrams are just like programs, but more abstract (object structure).
     > 图表显示了底层系统模型的某些方面。 图表就像程序一样，但更抽象（对象结构）。
+    * Some types of diagrams can be used in both use case and design views
+    > 某些类型的图表可以在用例和设计视图中使用
+    * UML’s diagram types
+    | 左对齐标题 | 右对齐标题 |
+    | :------| ------: |
+    | 短文本 | 中等文本 |
+    | 稍微长一点的文本 | 短文本 |
 
 
 
