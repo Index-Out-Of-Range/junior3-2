@@ -10,4 +10,6 @@
   * [PPT-1](xu-qiu-fen-xi-he-xi-tong-she-ji/ppt-1.md)
 * [软件工程](ruan-jian-gong-cheng.md)
   * Week-2
+* [并行与分布式程序设计](bing-xing-yu-fen-bu-shi-cheng-xu-she-ji.md)
+  * [并行算法设计与分析](bing-xing-yu-fen-bu-shi-cheng-xu-she-ji/bing-xing-suan-fa-she-ji-yu-fen-xi.md)
 
