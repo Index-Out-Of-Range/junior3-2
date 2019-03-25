@@ -58,6 +58,12 @@
     | 7 Activity diagram      | Design view            |
     | 8 Component diagram     | Implementation view    |
     | 9 Deployment diagram    | Deployment view        |
+#### The software development process
+* Linear or waterfall model
+    * Analysis -> Designing -> Development -> Testing -> Deployment
+* Iterative model
+    * 
+
 
 
 
