@@ -36,9 +36,14 @@
 * It can be used with a wide range of software processes
 * Views
 ![](/images/2019年3月23日22点07分.png)
+![](/images/2019年3月25日21点40分.png)
+![](/images/2019年3月25日21点41分.png)
+![](/images/2019年3月25日21点42分.png)
 * Models
     * Model elements
 * Diagrams
+    * A diagram presents certain aspect of the underlying system model.Diagrams are just like programs, but more abstract (object structure).
+    > 图表显示了底层系统模型的某些方面。 图表就像程序一样，但更抽象（对象结构）。
 
 
 
