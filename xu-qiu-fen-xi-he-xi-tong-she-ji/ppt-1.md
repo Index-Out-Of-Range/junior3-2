@@ -1,3 +1,5 @@
+# Chapter 1
+
 ## Model
 #### Definition: 
 * the intermediate descriptions (documents) produced in the process.
@@ -62,8 +64,18 @@
 * Linear or waterfall model
     * Analysis -> Designing -> Development -> Testing -> Deployment
 * Iterative model
-    * 
+    * ![](/assets/2019年3月25日21点58分.png)
 
+
+# Chapter 2
+
+## Modeling with objects
+* The object model
+    * Data + Operations
+    * Execution of a program: a dynamic network of intercommunicating objects.Nodes (object) + links (sending messages)
+    * The semantic foundation for UML’s design models
+* The stock control example
+    * Name,catalogue,cost
 
 
 
