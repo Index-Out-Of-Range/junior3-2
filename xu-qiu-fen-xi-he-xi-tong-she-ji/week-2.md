@@ -120,8 +120,13 @@
 > 它与类的标识属性不同
 * ![](/images/2019年4月5日17点21分.png)
 
-
-
+#### Associations
+* Associations, role names, multiplicity
+* ![](/images/2019年4月5日17点38分.png)
+>Worksfor是Associations的名字
+Employee和employer是角色
+* Self-associations
+* ![](/images/2019年4月5日17点38分（1）.png)
 
 
 
