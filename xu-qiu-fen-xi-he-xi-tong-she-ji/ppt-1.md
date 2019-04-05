@@ -85,6 +85,7 @@
     * Execution of a program: a dynamic network of intercommunicating objects.Nodes (object) + links (sending messages)
     > 程序的执行：相互通信对象的动态网络。 节点（对象）+链接（发送消息）
     * The semantic foundation for UML’s design models
+    > UML设计模型的语义基础
 * The stock control example
     * Name,catalogue,cost
 * Design: how to split up a system’s data and overall functionality.
