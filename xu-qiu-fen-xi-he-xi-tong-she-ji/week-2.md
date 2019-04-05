@@ -76,8 +76,12 @@
 
 #### Class multiplicity（类多重性）
 * Definition: the number of instances of the class that can exist.
+> 可以存在的类的实例数。
+
     * The relationship of “instance of” is rarely shown.
+    > 很少显示“实例”的关系。
 * Default: 0..*
+> 默认值
 * Notation for singleton class
 
 
