@@ -25,7 +25,7 @@
 
 #### Classes of methodologies
 * Structured methods
-    * Modelsa collection of data +functions external to the data
+    * Models: a collection of data +functions external to the data
     * Notations: data flow diagrams
     > 符号：数据流图
 * Object-oriented methods
