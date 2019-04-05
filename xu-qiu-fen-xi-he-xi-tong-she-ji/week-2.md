@@ -135,8 +135,12 @@ The problem: John is employed as a lecture and a bar attendant by a company
 * An illegal diagram in UML
 * ![](/images/2019年4月5日17点40分.png)
 
+* Possible solution
+![](/images/2019年4月5日17点42分.png)
 
-
-
-
+#### Generalization and specialization(泛化和特殊化)
+* Superclasses (ancestors), subclasses (descendants), generalization, specialization,abstract classes, inheritance, overriding operations in subclasses
+> 超类（祖先），子类（后代），泛化，特化，抽象类，继承，子类中的重写操作
+* Abstract operations (pure virtual functions)
+> 抽象操作（纯虚函数）
 
