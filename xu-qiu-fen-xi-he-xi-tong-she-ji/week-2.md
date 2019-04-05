@@ -9,6 +9,8 @@
 * Multiple inheritance in UML
 * Mixin class
 
-There is direct correspondence between class associations and object links.
-Multiplicity: Demo
+#### Classes and associations
+* There is direct correspondence between class associations and object links.
+> 类关联和对象链接之间存在直接对应关系。
+* Multiplicity: Demo（多重性的一个演示）
 
