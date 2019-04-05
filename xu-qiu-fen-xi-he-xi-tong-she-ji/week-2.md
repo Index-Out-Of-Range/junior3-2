@@ -111,10 +111,13 @@
 * Instance scope and class scope
 * ![](/images/2019年4月5日17点19分.png)
 
-#### Object identity
+#### Object identity(对象标识)
 * It is an intrinsic feature of objects
+> 它是物体的固有特征
 * Even two objects have the same set of values for all attributes, they have two different identity
+> 即使两个对象对所有属性具有相同的值集，它们也具有两个不同的标识
 * It is different from the identifying attribute of a class
+> 它与类的标识属性不同
 * ![](/images/2019年4月5日17点21分.png)
 
 
