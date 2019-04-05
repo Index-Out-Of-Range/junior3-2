@@ -29,5 +29,13 @@
 > 直接实现会导致冗余向量
 * 只要一些类有共同的属性，则应该设计一个基类。
 
+#### A more reasonable design
+* ![](/images/2019年4月5日16点47分.png)
+* Does not introduce new relationship between objects
+> 不引入对象之间的新关系
+> 抽象出基类
+
+#### Similar for Creation Tools
+* ![](/images/2019年4月5日16点49分.png)
 
 
