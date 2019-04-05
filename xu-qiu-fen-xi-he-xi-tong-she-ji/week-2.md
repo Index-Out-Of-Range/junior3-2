@@ -43,4 +43,7 @@
 * The associate relationship is not applicable, since the connection is not permanent
 > 关联关系不适用，因为连接不是永久性的
 * The instantiate relationship
+![](/images/2019年4月5日16点52分.png)
 
+> Instantiate 实例化：C++中多种场合用到：1. 实例化对象 2.给定模板参数实例化类 3.给定一个函数模板及参数，实例化出函数
+> UML中也有**实例化** 双尖括号左边的类的对象，能创建右边类的对象
