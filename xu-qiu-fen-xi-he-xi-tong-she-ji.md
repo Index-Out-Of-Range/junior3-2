@@ -8,3 +8,5 @@
 组合(Composition)
 实现(implements)
 泛化(Generalization)
+
+## 类图中符号的具体信息
