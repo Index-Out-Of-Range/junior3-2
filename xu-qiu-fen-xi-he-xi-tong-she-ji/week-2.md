@@ -206,8 +206,11 @@ The problem: John is employed as a lecture and a bar attendant by a company
 * Another way to express the composition relationship(另一种表示方法）
 ![](/images/2019-04-05_180730.png)
 > Associations inside a composite object can only link objects which are part of the same composite
+复合对象内的关联只能链接属于同一复合的对象
 
-
+* To model a computer network
+![](/images/2019-04-05_181510.png)
+> 一个computer里面的port和另一个computer的port相连：现实生活中，一个计算机的网卡的网线和两个一个计算机网卡相连。即可以表示一个计算机网络
 
 
 
