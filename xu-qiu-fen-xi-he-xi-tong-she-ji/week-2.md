@@ -143,4 +143,31 @@ The problem: John is employed as a lecture and a bar attendant by a company
 > 超类（祖先），子类（后代），泛化，特化，抽象类，继承，子类中的重写操作
 * Abstract operations (pure virtual functions)
 > 抽象操作（纯虚函数）
+* ![](/images/2019年4月5日17点44分.png)
+
+#### Association Generalization
+* An example: a customer can hold at most one Current Account.
+* ![](/images/2019年4月5日17点51分.png)
+> If without the generalization: (1) two associations have the same name. (2) There are two paths from the Customer class to the CurrentAccount class. Thus, a customer may holds two current accounts, according to the diagram.
+> 绿线是联系之间的限制条件，只能由下面的到达curentAccount
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
