@@ -175,15 +175,13 @@ main()
 #### The applicability of the object model（对象模型的适用性）
 * Often: object (real world) => object model
 * Exceptions: the example above
-* Message passing: no direct association
-> 消息传递：没有直接关联
+* Message passing: no direct association(消息传递：没有直接关联)
     * Example: people bump
     * Objects + events => Objects + messages
 * Strength of OO
     * Localization of data and operations
     > 数据和操作的本地化
-* In most cases, the following mapping holds
-> 在大多数情况下，以下映射成立
+* In most cases, the following mapping holds(在大多数情况下，以下映射成立)
     * real world object => object model
     > 真实世界对象 => 对象模型
 
