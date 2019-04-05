@@ -234,54 +234,15 @@ The problem: John is employed as a lecture and a bar attendant by a company
 * Applicability: to model attributes which are not intrinsic to the linked classes, but intrinsic to the link itself.
 > 适用性：模拟链接类不固有的属性，但链接本身固有的属性。
 
+* UML notation for association classes
+![](/images/2019-04-05_181931.png)
+> 当发生关联关系的时候，才记录的信息
 
+* Another example of using association class
+![](/images/2019-04-05_182008.png)
+* Reasons: 
+    * Salary is not an intrinsic property of a person
+    * An employee may be employed many times
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* An association class can have associations with other classes
+![](/images/2019-04-05_182058.png)
