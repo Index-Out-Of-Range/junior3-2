@@ -104,7 +104,12 @@
 * ![](/images/2019年4月5日17点16分.png)
 > 静态成员或成员函数用下划线表示
 
-
+#### Operations of classes
+* Format:
+    * name(p:parameter_type,…): return_type
+    * The types are **optional**
+* Instance scope and class scope
+* ![](/images/2019年4月5日17点19分.png)
 
 
 
