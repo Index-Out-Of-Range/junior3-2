@@ -159,6 +159,7 @@ The problem: John is employed as a lecture and a bar attendant by a company
 
     * Anti-symmetry: no self-connection
     > 反对称：没有自我连接
+    Anti-symmetry:反自身 一个对象不能和自己发生Aggregation’
     * Transitivity: if A is a part of B, and B is a part of C, then A is also a part of C.
     > 传递性：如果A是B的一部分，而B是C的一部分，那么A也是C的一部分。
 
