@@ -101,6 +101,8 @@
 * Multiplicity of attributes
 > 多种属性
 
+* ![](/images/2019年4月5日17点16分.png)
+> 静态成员或成员函数用下划线表示
 
 
 
