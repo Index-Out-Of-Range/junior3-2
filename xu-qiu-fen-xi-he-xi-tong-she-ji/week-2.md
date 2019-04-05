@@ -200,8 +200,8 @@ The problem: John is employed as a lecture and a bar attendant by a company
 > 当删除一个MailMessage时，Attachment并没有被删掉。
 实心空心
 
-
-
+* A situation where composition is **not applicable**
+![](/images/2019-04-05_180459.png)
 
 
 
