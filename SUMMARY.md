@@ -8,6 +8,7 @@
 * [需求分析和系统设计](xu-qiu-fen-xi-he-xi-tong-she-ji.md)
   * [PPT-2](xu-qiu-fen-xi-he-xi-tong-she-ji/week-2.md)
   * [PPT-1](xu-qiu-fen-xi-he-xi-tong-she-ji/ppt-1.md)
+  * [个人总结](xu-qiu-fen-xi-he-xi-tong-she-ji/ge-ren-zong-jie.md)
 * [软件工程](ruan-jian-gong-cheng.md)
   * [Week-2](ruan-jian-gong-cheng/week-2.md)
 * [并行与分布式程序设计](bing-xing-yu-fen-bu-shi-cheng-xu-she-ji.md)

@@ -1,4 +1,4 @@
-****# Chapter 1
+# Chapter 1
 
 ## Model
 #### Definition: 
@@ -185,9 +185,6 @@ main()
 * In most cases, the following mapping holds(在大多数情况下，以下映射成立)
     * real world object => object model
     > 真实世界对象 => 对象模型
-
----
-以上是课件内容，接下来是上网查找的内容。
 
 
 
