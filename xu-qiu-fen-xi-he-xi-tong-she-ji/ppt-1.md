@@ -76,6 +76,118 @@
     * The semantic foundation for UML’s design models
 * The stock control example
     * Name,catalogue,cost
+* Design: how to split up a system’s data and overall functionality.
+* A frequently used rule: real-world objects
+* Class
+
+    ![](/images/2019年4月5日14点25分.png)
+    
+#### Object Properties
+* State: the aggregate of the data values contained in an object’s attributes
+> 对象属性中包含的数据值的聚合
+* Behavior: shown in the class diagram
+* Identity: address in memory
+> 身份：内存中的地址
+* Object names: a convenient alias for its identity.
+> 对象名称：其标识的方便别名。
+
+#### Avoiding data replication（避免对象复制）
+* Data in the previous object model is replicated
+    * Waste storage
+    * Difficult to consistently update all objects
+* Links
+    * ![](/images/2019年4月5日14点31分.png)
+
+
+
+```
+#include <iostream>
+using namespace std;
+class CatalogueEntry {
+public:
+	CatalogueEntry(string p_name, long p_number, double p_cost){
+		name   = p_name  ;
+	    number = p_number;
+		cost   = p_cost  ;
+	}
+	string getName()   { return name;};
+	long   getNumber() { return number; };
+	double getCost()   { return cost;};
+private:
+	string name;
+	long number;
+	double cost;
+};
+
+class Part{
+public:
+	Part(CatalogueEntry * e){
+		entry = e;
+	}
+private:
+	CatalogueEntry * entry;
+}
+main()
+{
+	CatalogueEntry *screw = new   
+         CatalogueEntry("screw",28834,0.02);
+	Part * screw1 = new Part(screw);
+}
+```
+
+#### Navigability（导航性）
+* ![](/images/2019年4月5日14点36分.png)
+
+#### Message Passing
+* ![](/images/2019年4月5日14点39分.png)
+
+#### A simple structure
+* ![](/images/2019年4月5日14点40分.png)
+
+#### A more realistic structure
+* Impossible for implementation!
+* ![](/images/2019年4月5日14点41分.png)
+
+#### Use of abstract class
+* ![](/images/2019年4月5日14点41分.png)
+
+#### Object diagram
+* ![](/images/2019年4月5日14点44分.png)
+
+#### Late Binding & Polymorphism（多态性）
+* ![](/images/2019年4月5日14点45分.png)
+
+## Class Diagrams（类图）
+* Object diagrams: can only show a small subset of a program’s possible states.
+> 只能显示程序可能状态的一小部分。
+* We need to describe the software system in a more abstract level: class diagrams.
+> 需要在更抽象的层面上描述软件系统
+    * Similar to object diagram
+    * Types of the attributes are shown
+    > 显示属性的类型
+    * Association (linkage counter)
+    * Inheritance
+    > 继承
+    
+#### An example of class diagram
+* ![](/images/2019年4月5日14点48分.png)
+
+#### The applicability of the object model（对象模型的适用性）
+* Often: object (real world) => object model
+* Exceptions: the example above
+* Message passing: no direct association
+> 消息传递：没有直接关联
+    * Example: people bump
+    * Objects + events => Objects + messages
+* Strength of OO
+    * Localization of data and operations
+    > 数据和操作的本地化
+* In most cases, the following mapping holds
+> 在大多数情况下，以下映射成立
+    * real world object => object model
+    > 真实世界对象 => 对象模型
+
+
 
 
 
