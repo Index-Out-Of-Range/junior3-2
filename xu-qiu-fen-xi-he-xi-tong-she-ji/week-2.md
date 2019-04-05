@@ -212,8 +212,19 @@ The problem: John is employed as a lecture and a bar attendant by a company
 ![](/images/2019-04-05_181510.png)
 > 一个computer里面的port和另一个computer的port相连：现实生活中，一个计算机的网卡的网线和两个一个计算机网卡相连。即可以表示一个计算机网络
 
+#### Association classes: the problem
+* The problem: to record all the marks gained by students on all the modules that they are taking
+> 记录学生在所有模块上获得的所有分数
 
+* ![](/images/2019-04-05_181633.png)
 
+* Drawbacks: 
+    * duplication of the module information -> consistent checking
+    * The marks attribute is not intrinsic for Student
+    > marks属性不是Student的内在属性
+    
+> Marks放Student里的话，刚入学啥都没学的情况就会很奇怪。同样放在Module中也不合适。
+只有当Student Takes Module的时候才需要Marks，即为Association class见下页
 
 
 
