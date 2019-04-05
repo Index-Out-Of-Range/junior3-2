@@ -131,6 +131,7 @@ Employee和employer是角色
 #### Links do not have identity
 The problem: John is employed as a lecture and a bar attendant by a company
 > 问题是：约翰被聘为公司的讲座和酒吧服务员
+
 * An illegal diagram in UML
 * ![](/images/2019年4月5日17点40分.png)
 
