@@ -89,12 +89,13 @@
 * The stock control example
     * Name,catalogue,cost
 * Design: how to split up a system’s data and overall functionality.
-* A frequently used rule: real-world objects
+> 设计：如何分割系统的数据和整体功能。
+* A frequently used rule: **real-world objects**
 * Class
 
     ![](/images/2019年4月5日14点25分.png)
     
-#### Object Properties
+#### Object Properties（对象属性）
 * State: the aggregate of the data values contained in an object’s attributes
 > 对象属性中包含的数据值的聚合
 * Behavior: shown in the class diagram
@@ -161,7 +162,7 @@ main()
 * ![](/images/2019年4月5日14点41分.png)
 
 #### Use of abstract class
-* ![](/images/2019年4月5日14点41分.png)
+* ![](/images/2019年4月5日16点13分.png)
 
 #### Object diagram
 * ![](/images/2019年4月5日14点44分.png)
@@ -175,11 +176,9 @@ main()
 * We need to describe the software system in a more abstract level: class diagrams.
 > 需要在更抽象的层面上描述软件系统
     * Similar to object diagram
-    * Types of the attributes are shown
-    > 显示属性的类型
+    * Types of the attributes are shown（显示属性的类型）
     * Association (linkage counter)
-    * Inheritance
-    > 继承
+    * Inheritance（继承）
     
 #### An example of class diagram
 * ![](/images/2019年4月5日14点48分.png)
