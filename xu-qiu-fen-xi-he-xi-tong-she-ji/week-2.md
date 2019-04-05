@@ -38,4 +38,9 @@
 #### Similar for Creation Tools
 * ![](/images/2019年4月5日16点49分.png)
 
+#### The instantiate relationship
+* Consider the relationship between RectangleTool and Rectangle
+* The associate relationship is not applicable, since the connection is not permanent
+> 关联关系不适用，因为连接不是永久性的
+* The instantiate relationship
 
