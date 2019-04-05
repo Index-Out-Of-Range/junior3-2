@@ -65,6 +65,13 @@
 * Selected是角色role，离Element较近
 * Resizing位于正中间则不是角色
 
+#### Multiplicity（多重性）
+* Definition: the number of times a given entity can occur in some context.
+* Notation: number ranages
+    * E.g., 0..9
+    * \*  infinity
+    * Abbreviation, e.g., 1..1  1
+    * Could be a list, e.g., 0, 3..*
 
 
 
