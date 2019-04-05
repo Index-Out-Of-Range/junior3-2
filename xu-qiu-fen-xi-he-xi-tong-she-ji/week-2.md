@@ -83,6 +83,8 @@
 * Default: 0..*
 > 默认值
 * Notation for singleton class
+![](/images/2019年4月5日17点12分.png)
+> 类的右上角有数字比如1，则表示单一模式，只能有一个对象。
 
 
 
