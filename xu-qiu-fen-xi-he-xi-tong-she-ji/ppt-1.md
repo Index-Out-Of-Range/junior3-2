@@ -37,7 +37,7 @@
 * The dominant language in OO modeling
 > 面向对象建模中的主导语言
 * It can be used with a wide range of software processes
-* Views
+* **Views**
 ![](/images/2019年3月23日22点07分.png)
 ![](/images/2019年3月25日21点40分.png)
 ![](/images/2019年3月25日21点41分.png)
