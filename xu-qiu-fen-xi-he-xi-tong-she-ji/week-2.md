@@ -111,6 +111,11 @@
 * Instance scope and class scope
 * ![](/images/2019年4月5日17点19分.png)
 
+#### Object identity
+* It is an intrinsic feature of objects
+* Even two objects have the same set of values for all attributes, they have two different identity
+* It is different from the identifying attribute of a class
+* ![](/images/2019年4月5日17点21分.png)
 
 
 
