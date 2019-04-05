@@ -162,20 +162,43 @@ The problem: John is employed as a lecture and a bar attendant by a company
     Anti-symmetry:反自身 一个对象不能和自己发生Aggregation’
     * Transitivity: if A is a part of B, and B is a part of C, then A is also a part of C.
     > 传递性：如果A是B的一部分，而B是C的一部分，那么A也是C的一部分。
+* A “normal” aggregation relationship
+* ![](/images/2019年4月5日17点55分.png)
+> Put a diamond in the “whole” end.
+> 菱形代表母体
 
+* If without aggregation
+* ![](/images/2019年4月5日17点56分.png)
 
+* …leading to meaningless object diagrams
+* ![](/images/2019-04-05_175644.png)
+> Cyclical object structures
+> 循环对象结构
 
+* Solve the problem with aggregation
+![](/images/2019-04-05_175750.png)
+> The two cyclical structures can be ruled out
+> 可以排除上面的两种循环结构
+> 解决了上一张的两个问题
+不能self-
+由于传递性 y->z->y，不能self-
 
+* Aggregation: not necessarily be part/whole relationship
+![](/images/2019-04-05_180021.png)
 
+## Composite objects
+* Composite: a strong form of association
+    * A “part” can only belong to one composite object
+    > 部分”只能属于一个复合对象
+    * When a composite object is destroyed, all its dependent parts must be destroyed at the same time
+    > 当复合对象被销毁时，必须同时销毁其所有相关部分
+    * UML notation: solid diamonds
+    > UML表示法：实心菱形
 
-
-
-
-
-
-
-
-
+* An example of composition
+![](/images/2019-04-05_180414.png)
+> 当删除一个MailMessage时，Attachment并没有被删掉。
+实心空心
 
 
 
