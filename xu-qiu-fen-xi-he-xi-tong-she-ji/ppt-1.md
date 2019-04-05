@@ -35,6 +35,7 @@
     
 #### A brief Introduction to UML
 * The dominant language in OO modeling
+> 面向对象建模中的主导语言
 * It can be used with a wide range of software processes
 * Views
 ![](/images/2019年3月23日22点07分.png)
