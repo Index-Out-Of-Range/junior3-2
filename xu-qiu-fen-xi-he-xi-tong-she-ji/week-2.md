@@ -69,7 +69,7 @@
 * Definition: the number of times a given entity can occur in some context.
 * Notation: number ranages
     * E.g., 0..9
-    * \*  infinity
+    * \* => infinity
     * Abbreviation, e.g., 1..1  1
     * Could be a list, e.g., 0, 3..*
 
