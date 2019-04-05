@@ -203,5 +203,65 @@ The problem: John is employed as a lecture and a bar attendant by a company
 * A situation where composition is **not applicable**
 ![](/images/2019-04-05_180459.png)
 
+* Another way to express the composition relationship(另一种表示方法）
+![](/images/2019-04-05_180730.png)
+> Associations inside a composite object can only link objects which are part of the same composite
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
