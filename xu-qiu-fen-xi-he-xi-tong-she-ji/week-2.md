@@ -226,7 +226,13 @@ The problem: John is employed as a lecture and a bar attendant by a company
 > Marks放Student里的话，刚入学啥都没学的情况就会很奇怪。同样放在Module中也不合适。
 只有当Student Takes Module的时候才需要Marks，即为Association class见下页
 
-
+#### Association classes
+* Associating data values with links
+> 将数据值与链接相关联
+* UML notation: a dashed line to a link
+> UML表示法：链接的虚线
+* Applicability: to model attributes which are not intrinsic to the linked classes, but intrinsic to the link itself.
+> 适用性：模拟链接类不固有的属性，但链接本身固有的属性。
 
 
 
