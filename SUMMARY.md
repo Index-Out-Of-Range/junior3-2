@@ -6,6 +6,7 @@
   * [Week-1](ji-suan-ji-shi-jue/week-1.md)
   * [Matlab学习](ji-suan-ji-shi-jue/matlabxue-xi.md)
 * [需求分析和系统设计](xu-qiu-fen-xi-he-xi-tong-she-ji.md)
+  * [PPT-3](xu-qiu-fen-xi-he-xi-tong-she-ji/ppt-3.md)
   * [PPT-2](xu-qiu-fen-xi-he-xi-tong-she-ji/week-2.md)
   * [PPT-1](xu-qiu-fen-xi-he-xi-tong-she-ji/ppt-1.md)
   * [个人总结](xu-qiu-fen-xi-he-xi-tong-she-ji/ge-ren-zong-jie.md)
