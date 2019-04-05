@@ -75,7 +75,10 @@
     * Could be a list, e.g., 0, 3..*
 
 #### Class multiplicity（类多重性）
-
+* Definition: the number of instances of the class that can exist.
+    * The relationship of “instance of” is rarely shown.
+* Default: 0..*
+* Notation for singleton class
 
 
 
