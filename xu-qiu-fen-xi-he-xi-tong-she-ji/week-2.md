@@ -67,13 +67,14 @@
 
 #### Multiplicity（多重性）
 * Definition: the number of times a given entity can occur in some context.
+> 定义：给定实体在某些上下文中可以出现的次数。
 * Notation: number ranages
     * E.g., 0..9
     * \* => infinity
-    * Abbreviation, e.g., 1..1  1
+    * Abbreviation, e.g., 1..1 => 1
     * Could be a list, e.g., 0, 3..*
 
-
+#### Class multiplicity（类多重性）
 
 
 
