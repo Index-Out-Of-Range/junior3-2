@@ -128,8 +128,10 @@ Employee和employer是角色
 * Self-associations
 * ![](/images/2019年4月5日17点38分（1）.png)
 
-
-
+#### Links do not have identity
+The problem: John is employed as a lecture and a bar attendant by a company
+* An illegal diagram in UML
+* ![](/images/2019年4月5日17点40分.png)
 
 
 
