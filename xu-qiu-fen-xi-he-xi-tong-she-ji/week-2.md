@@ -87,6 +87,19 @@
 * ![](/images/2019年4月5日17点12分.png)
 > 类的右上角有数字比如1，则表示单一模式，只能有一个对象。
 
+#### Attributes of classes（类的属性）
+* Attributes format
+    * In the early stages: `name`
+    * Common format:   `name: type`
+    * Complete format: `name: type = default_value`
+* Other classes should not be used as the attribute types => association
+> 其他类不应该用作属性类型
+* Instance scope
+> 实例范围
+* Class scope: underlined
+> 类范围：下划线
+* Multiplicity of attributes
+> 多种属性
 
 
 
