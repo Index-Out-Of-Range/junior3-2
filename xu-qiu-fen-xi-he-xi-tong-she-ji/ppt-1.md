@@ -1,3 +1,11 @@
+## 难点
+### Views
+* Use Case View
+* Design View
+* Implementation View
+* Process View
+* Deployment View
+
 # Chapter 1
 
 ## Model
@@ -61,19 +69,21 @@
     | 7 Activity diagram      | Design view            |
     | 8 Component diagram     | Implementation view    |
     | 9 Deployment diagram    | Deployment view        |
+    
 #### The software development process
 * Linear or waterfall model
     * Analysis -> Designing -> Development -> Testing -> Deployment
 * Iterative model
     * ![](/assets/2019年3月25日21点58分.png)
 
-
+---
 # Chapter 2
 
 ## Modeling with objects
 * The object model
     * Data + Operations
     * Execution of a program: a dynamic network of intercommunicating objects.Nodes (object) + links (sending messages)
+    > 程序的执行：相互通信对象的动态网络。 节点（对象）+链接（发送消息）
     * The semantic foundation for UML’s design models
 * The stock control example
     * Name,catalogue,cost
