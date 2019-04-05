@@ -151,6 +151,16 @@ The problem: John is employed as a lecture and a bar attendant by a company
 > If without the generalization: (1) two associations have the same name. (2) There are two paths from the Customer class to the CurrentAccount class. Thus, a customer may holds two current accounts, according to the diagram.
 > 绿线是联系之间的限制条件，只能由下面的到达curentAccount
 
+#### Aggregation
+* Is just a kind of association
+    * Most often it is used to describe part/whole relationship.
+* Properties when objects are linked to instances of their own class.
+> 对象链接到其自己的类的实例时的属性。
+
+    * Anti-symmetry: no self-connection
+    > 反对称：没有自我连接
+    * Transitivity: if A is a part of B, and B is a part of C, then A is also a part of C.
+    > 传递性：如果A是B的一部分，而B是C的一部分，那么A也是C的一部分。
 
 
 
