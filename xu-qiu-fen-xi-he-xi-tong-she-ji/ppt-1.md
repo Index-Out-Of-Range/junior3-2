@@ -186,7 +186,8 @@ main()
     * real world object => object model
     > 真实世界对象 => 对象模型
 
-
+---
+以上是课件内容，接下来是上网查找的内容。
 
 
 
