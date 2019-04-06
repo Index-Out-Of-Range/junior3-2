@@ -275,6 +275,22 @@ Solutions for appending additional functionalities
 	* Interface of the two classes are different
 	* Difficult to recursively decorate
 
+#### Solutions for appending additional functionalities
+-- by class composition (#2)
+![](/images/2019年4月6日/2019-04-06_213317.png)
+* Drawbacks: 
+the Basic_class must take care of the interface elements
+
+
+
+
+
+
+
+
+
+
+
 
 
 
