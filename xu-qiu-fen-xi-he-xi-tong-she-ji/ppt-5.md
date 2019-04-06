@@ -145,7 +145,9 @@ Activity不一样，activity会被中断，如按了stop则activity被无条件�
 
 #### Preliminary statechart(初步的状态)
 * A single (the most common) transaction
+> 单个(最常见的)事务
 * Every event leads to a transition between two states
+> 每一个事件都导致两种状态之间的过渡
 * It is unnecessary to name the states
 ![](/images/2019年4月6日/2019-04-06_165400.png)
 
