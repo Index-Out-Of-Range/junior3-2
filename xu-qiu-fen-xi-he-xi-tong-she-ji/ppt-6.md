@@ -283,17 +283,35 @@ the Basic_class must take care of the interface elements
 
 #### Decorator pattern
 * The basic class is enclosed by a decorator class
+> 基本类由修饰类包围
 * The decorator class conforms to the interface of the basic class.
+> 装饰器类符合基本类的接口。
 * Implementation of the interface:
-* Forwards requests to the basic class
-* Perform any additional actions before or after the forwarding
+	* Forwards requests to the basic class
+	> 将请求转发给基本类
+	* Perform any additional actions before or after the forwarding
+	> 在转发之前或之后执行任何其他操作
 * Consequence: decorators can be nested recursively.
+> 结果:装饰器可以递归嵌套。
 
+#### Application of the decorator pattern to the example
+![](/images/2019年4月6日/2019-04-06_213801.png)
 
+#### An example: object diagram
+![](/images/2019年4月6日/2019-04-06_213814.png)
+![](/images/2019年4月6日/2019-04-06_213849.png)
 
+#### General structure of the decorator pattern
+![](/images/2019年4月6日/2019-04-06_213908.png)
 
-
-
+## Applicability
+* To add or remove responsibilities at run-time
+* The component class does not have to know anything about its decorators.
+* Comparison between decorator pattern and composite pattern
+	* Decorator pattern is a degenerate composite pattern
+	* Intentions are different
+		* Decorator: for adding additional functionalities
+		* Composite: for object aggregation
 
 
 
