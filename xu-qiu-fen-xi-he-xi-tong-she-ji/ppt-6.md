@@ -66,4 +66,24 @@ int main()
 }
 ```
 
+#### Description of a pattern
+* Pattern name (singleton)
+* The problem
+	* Not the basic data structures, nor the entire system
+	> 
+	* Not domain specific
+* The solution
+* The consequence ( discussion)
+	* Space and time trade-offs
+	* Language and implementation issues
+	* Impact on a system’s  flexibility, extensibility, and portability.
+	
+
+
+
+
+
+
+
+
 
