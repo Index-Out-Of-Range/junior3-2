@@ -70,7 +70,7 @@ int main()
 * Pattern name (singleton)
 * The problem
 	* Not the basic data structures, nor the entire system
-	> 
+	> 不是基本的数据结构，也不是整个系统
 	* Not domain specific
 * The solution
 * The consequence ( discussion)
