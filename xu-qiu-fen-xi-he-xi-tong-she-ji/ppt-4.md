@@ -80,7 +80,7 @@ Sequence图是软件设计迈出的第一步：为了实现这个用例，应该
 
 * A sequence diagram
 ![](/images/2019年4月6日/2019-04-06_154643.png)
-
+* 比较复杂的才绘制sequence图，尤其是多线程
 * Elements in a sequence diagram
     * Objects are shown at the top.
     > 对象显示在顶部
@@ -93,11 +93,14 @@ Sequence图是软件设计迈出的第一步：为了实现这个用例，应该
     * Construction of a new object.
     > 构造一个新对象
 
+* Creating a rectangle element 
+![](/images/2019年4月6日/2019-04-06_155157.png)
+> 序列图不反映演示程序的实际序列。但是这并不重要，因为我们的目标只是比较两种类型交互图之间的差异。
 
-
-
-
-
+* A collaboration diagram
+![](/images/2019年4月6日/2019-04-06_155255.png)
+> Order of the messages should be explicitly specified.
+应该显式指定消息的顺序。
 
 
 
