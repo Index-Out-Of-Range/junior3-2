@@ -120,6 +120,38 @@ Bi- xxx: 互相。。强调一致性
 
 
 
+* ![](/images/2019年4月6日/2019-04-06_150628.png)
+```
+#include <iostream>
+#include <vector>
+using namespace std;
+class B {
+	//...
+public:
+	operator ==( B & r) {};
+};
+class A {
+    vector<B> links;
+public:
+    addLink(B & b) {
+		links.push_back( b );
+	};
+    removeLink(B & b ){
+        vector<B>::iterator it;
+        for ( it=links.begin(); it!=links.end(); it++) {
+            if ( *it == b) break;
+        }
+        if ( it != links.end() )
+            links.erase(it);
+    };
+}
+main()
+{
+}
+```
+
+
+
 
 
 
