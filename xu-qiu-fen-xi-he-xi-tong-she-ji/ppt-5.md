@@ -186,7 +186,17 @@ Activity不一样，activity会被中断，如按了stop则activity被无条件�
 > after:经过某一时刻，会触发一个时间
 when:指定某一时刻，会触发一个事件
 
+![](/images/2019年4月6日/2019-04-06_170905.png)
 
+## Action states
+* Purpose of using action states: to avoid repetitions of transitions.
+> 避免过渡的重复。
+* An action state represents a period of time during which an object is performing some internal processing
+> 动作状态表示对象执行某些内部处理的一段时间
+* It only contains an activity
+* It can not respond to external events.The transitions leaving an action state can only be completion transitions.
+> 它不能响应外部事件。离开操作状态的转换只能是完成转换。
+* Do not overuse them.
 
 
 
