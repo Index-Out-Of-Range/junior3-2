@@ -94,6 +94,10 @@ Activity不一样，activity会被中断，如按了stop则activity被无条件�
 * The states above are grouped together to form a composite state; the individual states are called substates.
 > 将上述状态组合在一起形成复合状态;单独的状态称为子状态。
 
+![](/images/2019年4月6日/2019-04-06_164322.png)
+> 对于蓝色的，复合状态中的任何一个子状态都有这种跳转。
+使得两个跳转变成一个跳转。
+如果复合状态中有一个子状态是活动的，我们就说复合状态是活动的，且任何时刻只有一个子状态是活动的
 
 
 
