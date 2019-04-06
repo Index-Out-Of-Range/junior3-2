@@ -227,26 +227,27 @@ main()
 using namespace std;
 class Guarantor;
 class Account {
-  public:
-	Guarantor * pGuarantor;	  
-	int i;
-	Account( Guarantor * g) {
-	pGuarantor = g;
-	i = 100;	
+public:
+    Guarantor * pGuarantor;	  
+    int i;
+    Account( Guarantor * g) {
+        pGuarantor = g;
+        i = 100;	
         f();
-	}
-	virtual f()  {cout << "f\n"; }
+    }
+    virtual f()  {cout << "f\n"; }
 };
 class Guarantor {
-public: Account * pAccount;  
+public: 
+    Account * pAccount;  
     int j;
     Guarantor(Account * a){
-		  pAccount = a;   j = 200;
-		  g();		  
-		  //a->f();
-		  //cout << a->i;
-	}
-	virtual g(){ cout << "g\n"; }
+        pAccount = a;   j = 200;
+        g();		  
+        //a->f();
+        //cout << a->i;
+    }
+    virtual g(){ cout << "g\n"; }
 };
 main ()
 {  
