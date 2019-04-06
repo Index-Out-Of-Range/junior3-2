@@ -264,6 +264,13 @@ when:指定某一时刻，会触发一个事件
     > 类A持有一个指针(指向根类)。
     * For incoming messages, class A simply pass them on to the object representing the current state.
     > 对于传入消息，类A只是将它们传递给表示当前状态的对象。
+    * The root class has an interface to process all messages sent to class A.
+    > 根类有一个接口来处理发送到类A的所有消息。
+    * Each state class only re-define functions for the messages that interest it.
+    > 每个状态类只为它感兴趣的消息重新定义函数。
+    * Each state is capable of destroying itself, creating a new object representing a new state, and setting the current state to the new state.
+    => bidirectional association between class A and the root class is necessary.
+
 
 ![](/images/2019年4月6日/2019-04-06_172451.png)
 
