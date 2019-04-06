@@ -44,13 +44,23 @@
 ## Entry and exit actions
 * Entry actions are performed every time a state becomes active, immediately after actions on transitions leading to the state have completed.
 > 每次状态变为活动状态时，都会立即执行条目操作，这是在导致状态的转换操作完成之后执行的。
+Entry action：进入这个状态的准备工作。目的：指导我们在编码阶段要实现
+
 
 * Exit actions: are performed whenever a transition is fired to leave the state.
 > 退出操作:在触发转换以离开状态时执行。
 
+* Entry and exit actions. Applicable for self-transitions too.(也适用于自我转换。)
+![](/images/2019年4月6日/2019-04-06_163202.png)
 
-
-
+## Activities
+* Activities
+    * The operation continues to run throughout the period when the state is active.
+    * Can be interrupted by other events.
+    * If no event interrupt it, completion transitions will be issued
+* Actions
+    * Can be though of as being instantaneous
+    * Can not be interrupted by other events. 
 
 
 
