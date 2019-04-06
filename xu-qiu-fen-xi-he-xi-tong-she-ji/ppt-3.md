@@ -56,11 +56,21 @@ Mixin class：即表示多继承关系，同时一种设计模式
 #### Multiple inheritance in UML（UML中的多继承）
 * UML allows multiple inheritance
 * Attributes and operations of the common ancestor (if any) are inherited only once
+> 公共祖先(如果有)的属性和操作只继承一次
 
+* An example of multiple inheritance
+![](/images/2019年4月6日/2019-04-06_143422.png)
+> Possible name clash: “date” of document and message
+可能的名称冲突:文档和消息的“日期”
 
+* Multiple inheritance with a common ancestor
+![](/images/2019年4月6日/2019-04-06_143534.png)
 
+#### Mixin class
+* A mixin class: is intended to provide an optional interface or functionality to other classes. The functionality should be independent with that of the existing classes.
 
-
+* It is similar to an abstract classes in that it’s not intended to be instantiated. 
+* Mixin classes require multiple inheritance.
 
 
 
