@@ -56,13 +56,24 @@ Entry action：进入这个状态的准备工作。目的：指导我们在编�
 ## Activities
 * Activities
     * The operation continues to run throughout the period when the state is active.
+    > 在状态处于活动状态期间，操作将继续运行。
     * Can be interrupted by other events.
+    > 可能被其他事件打断。
     * If no event interrupt it, completion transitions will be issued
+    > 如果没有事件中断，将发出完成转换
 * Actions
     * Can be though of as being instantaneous
+    > 可以是瞬间的
     * Can not be interrupted by other events. 
+    > 不能被其他事件打断。
 
-
+* Activities and completion transitions(活动和完成转换)
+![](/images/2019年4月6日/2019-04-06_163457.png)
+Activity：系统处于某个状态要做的事。
+do/做完的时候出发complete，要执行completion transitions
+而/后的叫做action，包括entry action和exit action都是原子的。
+Activity不一样，activity会被中断，如按了stop则activity被无条件中断。
+如果没有被中断，则执行完会执行completion trans
 
 
 
