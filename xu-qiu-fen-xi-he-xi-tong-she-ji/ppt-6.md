@@ -81,12 +81,45 @@ int main()
 #### Roles design patterns play
 * Application programs
 	* Use design patterns to reduce the class dependencies, platform dependencies, etc.
+	> 使用设计模式来减少类依赖、平台依赖等。
 * Toolkit
 	* Use design pattern for code reuse
 	* For example: containers, iterators and algorithms in C++ STL.
 * Frameworks
 	* Emphasize design reuse
 	* Use of patterns in a framework makes learning the usage of the framework easier
+	> 在框架中使用模式使学习框架的使用更加容易
+
+#### When not to use design patterns
+* Drawbacks of using design patterns
+	* Complicate the design
+	* Degrade the performance of the system, in terms of space and time requirements.
+* Only use design patterns if you want:
+	* Flexibility
+	* Extensibility
+	* portability
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
