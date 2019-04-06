@@ -223,20 +223,46 @@ when:指定某一时刻，会触发一个事件
 * In  Idle or No ticket selected  state, a single press of the ticket type button leads to transitions ending at the ticket selected state. Thus, we need only to study the last state.
 > 在空闲状态或没有选择票证的状态下，只需按一下票证类型按钮，就可以在票证选择状态结束转换。因此，我们只需要研究最后一种状态。
 * Add an entry action to deactivate the buttons
-> 
+> 添加一个条目操作来禁用按钮
 * Since all transitions leaving from the ticket selected state end at the Idle state, we can add an exit action into the state to reactivate the buttons.
+> 由于所有离开票选状态的转换都以空闲状态结束，所以我们可以在状态中添加一个exit操作来重新激活按钮。
 
+![](/images/2019年4月6日/2019-04-06_172141.png)
 
 #### Q2:
 * Suppose that once enough money has been entered to pay for the required ticket, the coin entry slot is closed, and only reopened once any ticket and change has been issued.
 > 假设已经输入了足够的钱来支付所需的票款，那么硬币进入槽就关闭了，只有在发出任何票款和更改之后才重新打开。
 
+#### A2:
+* In  Idle or No ticket selected  state, the machine does not know what type of ticket is required by the user, so it is impossible to judge whether the entered money is enough. Thus, the slot is kept open.
+> 在Idle或No ticket selected状态下，机器不知道用户需要哪种类型的票，所以无法判断输入的钱是否足够。因此，插槽保持打开状态。
+* In the ticket selected state, when enough money has been entered, the machine jumps into the action state. 
+> 在票选状态下，当输入足够的钱时，机器就跳转到动作状态。
+* Thus, we add an entry action into the action state to close the slot.
+> 因此，我们在操作状态中添加一个条目操作来关闭插槽。
+* Since the slot is reopened only after the ticket and change is issued, we add an entry action into the idle state.
+> 由于插槽仅在票证和更改发出后才重新打开，所以我们将一个entry操作添加到空闲状态。
 
+![](/images/2019年4月6日/2019-04-06_172323.png)
 
+## Implementation of statecharts
+* Solution 1
+    * The states are modeled by an enumeration variable.
+    > 状态由枚举变量建模。
+    * “Switch” statements are used for the member functions whose behaviors varies with the state.
+    > “Switch”语句用于行为随状态变化的成员函数。
+* Drawbacks(缺点)
+    * When a new state is added, all functions should be changed.
+    * Some functions contain many empty cases in the switch statement
 
+* Solution 2:
+    * Suppose class A has n states. Each state is modeled by a state class.
+    > 假设A类有n种状态。每个状态都由一个状态类建模。
+    * All the state classes are generalized to a root class.
+    * Class A holds a pointer (to the root class).
+    * For incoming messages, class A simply pass them on to the object representing the current state.
 
-
-
+![](/images/2019年4月6日/2019-04-06_172451.png)
 
 
 
