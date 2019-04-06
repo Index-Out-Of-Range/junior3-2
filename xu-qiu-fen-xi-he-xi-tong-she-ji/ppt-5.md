@@ -299,11 +299,52 @@ Creation的指针指向唯一活跃状态，事件转发给活跃状态。
 
 
 
+```
+class CToolState;
+class CreationTool{
+    CToolState* pCurState; // points to the current state
+public:
+	void Press();
+	void ChangeState( CToolState * pNewState);
+};
 
+class CToolState {
+protected:
+	CreationTool * pCreationTool; // bidirectional
+public:
+	CToolState(CreationTool * p);
+	void ChangeState(CToolState * s);
+	virtual void Press();
+};
+void CreationTool::Press() {  pCurState->Press(); } // passing message
+void CreationTool::ChangeState(CToolState *pNewState)
+{	
+	delete pCurState;
+	pCurState = pNewState;
+}
 
+CToolState::CToolState(CreationTool * p)
+{	pCreationTool = p;
+}
+void CToolState::ChangeState(CToolState * s)
+{	pCreationTool->ChangeState(s);
+}
+void CToolState::Press() {}
 
+class LocatingStop : public CToolState {	
+public:
+	LocatingStop( CreationTool * p): CToolState(p) {}
+};
+class LocatingStart: public CToolState {
+public:
+	LocatingStart( CreationTool * p): CToolState(p) {}
+    void Press() {
+		// set start position
+		// draw faint image
+		ChangeState(new LocatingStop(pCreationTool) );
+	}
+}
 
-
-
-
+main() { }
+```
 
