@@ -57,16 +57,25 @@
 
 #### Realization of a use case
 * Describe how a set of objects can interact with each other to implement the use case.
+> 描述一组对象如何相互交互以实现用例。
+
     * For designer: to build up an understanding of the objects, classes and interactions
+    > 对于设计人员:建立对对象、类和交互的理解
     * The first step of design
     * Do not consider the GUI elements
-* Notation: interaction diagrams
+* Notation: interaction diagrams(符号:交互图)
     * Sequence diagrams (more informative)
-    * collaboration diagrams (more concise)
+    * collaboration diagrams (more concise(简洁的))
+
 > 用例图丝毫不考虑软件是怎么设计，只考虑需求
 Sequence图是软件设计迈出的第一步：为了实现这个用例，应该有哪些对象，这些对象应该怎样协同工作去实现用例
 
-
+* Realization of the “create diagram” use case
+    * Multiple diagrams 
+        => We need a “diagram” class
+    * Only one active diagrams
+        => We need a “DiagramEditor” object
+    * The “DiagramEditor” should have a link 
 
 
 
