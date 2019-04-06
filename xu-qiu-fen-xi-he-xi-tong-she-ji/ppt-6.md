@@ -205,11 +205,15 @@ public:
 #### Strategy pattern
 * Applicability
 	* You need different variants of an algorithm.
+	> 你需要一个算法的不同变体。
 	* Some algorithms use data that clients should not know about.
+	> 有些算法使用客户端不应该知道的数据。
 	* Essential point: separator the algorithms from the data.
+	> 要点:将算法与数据分离。
 * Structure
 
-
+* General structure of the strategy pattern
+![](/images/2019年4月6日/2019-04-06_210129.png)
 
 
 
