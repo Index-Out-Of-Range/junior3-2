@@ -342,7 +342,11 @@ Keeping the component class lightweightOtherwise, the decorators will be too he
 ![](/images/2019年4月6日/2019-04-06_214234.png)
 
 #### Code segments to use the decorator pattern
+> 使用装饰器模式的代码段
 
+
+
+```
 Stream * fStream = new FileStream("test.cpp");
 Stream * mStream = new MemoryStream();
 Stream * fcStream = new CompressingStream(
@@ -353,40 +357,34 @@ new ASCII7Stream ( new FileStream("test.cpp") ));
 
 fc7Stream->PutInt(12);
 fc7Stream->PutString("hello");
+```
+
+
 
 #### A Java example
+
+
+```
 import java.io.*;
 import java.util.zip.*;
 
 public class GZIPCompress {
-  public static void main ( String [ ] args ) 
-  throws IOException {
-    BufferedReader in = 
-	    new BufferedReader (
-		    new FileReader( args[0] ) );
-	
-	
-    BufferedOutputStream out =
-        new BufferedOutputStream (
-		    new GZIPOutputStream (
-			    new FileOutputStream(args[1] ) ));
-
+  public static void main ( String [ ] args ) throws IOException {
+	BufferedReader in = new BufferedReader (new FileReader(args[0]));
+	BufferedOutputStream out =
+        new BufferedOutputStream (new GZIPOutputStream (new FileOutputStream(args[1])));
 	System.out.println("Compressing file...");
 	int c;
 	while ( (c = in.read()) != -1 )
 	    out.write(c);
 	in.close();
 	out.close();
-System.out.println("Verifying file...");
-	BufferedReader in2 =
-	    new BufferedReader (
-		    new InputStreamReader (
-			    new GZIPInputStream (
-				    new FileInputStream( args[1] ) )));
+	System.out.println("Verifying file...");
+	BufferedReader in2 = new BufferedReader(new InputStreamReader (
+			    new GZIPInputStream (new FileInputStream(args[1]))));
 	String s;
 	while ( (s = in2.readLine())  != null )
 		System.out.println(s);
   }
 }
-
-
+```
