@@ -215,6 +215,34 @@ public:
 * General structure of the strategy pattern
 ![](/images/2019年4月6日/2019-04-06_210129.png)
 
+![](/images/2019年4月6日/2019-04-06_211956.png)
+> Notes:
+Sub-classing the context class can alsoimplement different algorithms
+>> 子类化上下文类还可以实现不同的算法
+
+> Drawback: you can not easily change the algorithms dynamically.
+从A切换到B就没那么容易，被处理的数据被蹂在一起。所以没办法在运行阶段转换策略
+
+
+
+```
+void Composition::Compose() {
+	switch ( _breakingStrategy ) {
+	case SimpleStrategy:
+		ComposeWithSimpleStrategy();
+		break;
+	case TexStrategy:
+		ComposeWithTexStrategy();
+		break;
+	// ...
+	}
+}
+// With strategy pattern
+void Composition::Compose() {
+	_compositor->Compose();
+	// ...
+}
+```
 
 
 
