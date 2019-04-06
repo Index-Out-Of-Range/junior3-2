@@ -102,7 +102,10 @@ Sequence图是软件设计迈出的第一步：为了实现这个用例，应该
 > Order of the messages should be explicitly specified.
 应该显式指定消息的顺序。
 
+* 这个序列图显示了选择一个元素的过程。
+![](/images/2019年4月6日/2019-04-06_155424.png)
 
+这个序列图显示了选择一个元素的过程。
 
 
 
