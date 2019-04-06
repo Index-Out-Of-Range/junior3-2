@@ -302,8 +302,8 @@ main()
 
 * The implementation changed the meaning of the original class diagram. Further constraints should be imposed on the implementation. 
 
-
-
+![](/images/2019年4月6日/2019-04-06_152511.png)
+> 具体实现只能采用下面这种类图来替换associations class
 
 
 
