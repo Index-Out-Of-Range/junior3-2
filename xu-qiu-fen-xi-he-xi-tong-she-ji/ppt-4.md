@@ -83,11 +83,15 @@ Sequence图是软件设计迈出的第一步：为了实现这个用例，应该
 
 * Elements in a sequence diagram
     * Objects are shown at the top.
+    > 对象显示在顶部
     * Time flows downward.
+    > 时间线向下流动
     * Lifeline.
     * Messages & message to oneself
     * Activation: processing a message.
+    > 激活:处理消息。
     * Construction of a new object.
+    > 构造一个新对象
 
 
 
