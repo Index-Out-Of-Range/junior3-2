@@ -259,11 +259,35 @@ when:指定某一时刻，会触发一个事件
     * Suppose class A has n states. Each state is modeled by a state class.
     > 假设A类有n种状态。每个状态都由一个状态类建模。
     * All the state classes are generalized to a root class.
+    > 所有状态类都被概括为一个根类。
     * Class A holds a pointer (to the root class).
+    > 类A持有一个指针(指向根类)。
     * For incoming messages, class A simply pass them on to the object representing the current state.
+    > 对于传入消息，类A只是将它们传递给表示当前状态的对象。
 
 ![](/images/2019年4月6日/2019-04-06_172451.png)
 
+
+
+```
+class CToolState {
+	virtual void Press()=0;
+};
+class CreationTool{
+    CToolState* state;
+	void Press() {state->Press();}
+}
+```
+
+
+> 每个状态对应一个类
+任意时刻只有一个类是活跃的
+Creation的指针指向唯一活跃状态，事件转发给活跃状态。
+活动状态会再次转发给活动对象
+
+> 状态跳转如locatingStart跳转到LoacatingStop
+鼠标按下的事件处理函数在locatingStart函数，但他自身不可能修改指针。他只知道要切换状态了，所以要切换状态时不能让状态的子类去执行操作。
+所以要把转换状态的任务上升到基类。CToolState也执行不了，再次回传给CreationTool，他可以做
 
 
 
