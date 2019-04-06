@@ -219,6 +219,14 @@ when:指定某一时刻，会触发一个事件
 * Suppose that the ticket selection buttons are deactivated once a ticket type has been selected, and only reactivated at the end of a transaction.
 > 假设一旦选择了票券类型，票券选择按钮就被禁用，并且只在事务结束时重新激活。
 
+#### A1:
+* In  Idle or No ticket selected  state, a single press of the ticket type button leads to transitions ending at the ticket selected state. Thus, we need only to study the last state.
+> 在空闲状态或没有选择票证的状态下，只需按一下票证类型按钮，就可以在票证选择状态结束转换。因此，我们只需要研究最后一种状态。
+* Add an entry action to deactivate the buttons
+> 
+* Since all transitions leaving from the ticket selected state end at the Idle state, we can add an exit action into the state to reactivate the buttons.
+
+
 #### Q2:
 * Suppose that once enough money has been entered to pay for the required ticket, the coin entry slot is closed, and only reopened once any ticket and change has been issued.
 > 假设已经输入了足够的钱来支付所需的票款，那么硬币进入槽就关闭了，只有在发出任何票款和更改之后才重新打开。
