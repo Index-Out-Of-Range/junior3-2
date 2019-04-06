@@ -108,6 +108,36 @@ Sequence图是软件设计迈出的第一步：为了实现这个用例，应该
 * Deleting an element: Termination of objects
 ![](/images/2019年4月6日/2019-04-06_155801.png)
 
+* Moving an element: use case extension
+![](/images/2019年4月6日/2019-04-06_155853.png)
+
+* Hierarchical numbering of messages(消息的分级编号)
+![](/images/2019年4月6日/2019-04-06_155956.png)
+> Can also be used in collaboration diagram
+当然，对于简单的序列图，没有必要进行编号。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
