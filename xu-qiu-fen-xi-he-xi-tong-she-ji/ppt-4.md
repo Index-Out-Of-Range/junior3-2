@@ -82,10 +82,18 @@ Sequence图是软件设计迈出的第一步：为了实现这个用例，应该
 ![](/images/2019年4月6日/2019-04-06_154643.png)
 
 * Elements in a sequence diagram
-    * Objects are shown at the top.
-    * Time flows downward.
-    * Lifeline.
-    * Messages & message to oneself
+    * Objects are shown at the top.对象显示在顶部。
+
+
+
+激活:处理消息。
+构造一个新对象。
+    * Time flows downward.时间向下流动。
+
+    * Lifeline.生命线。
+
+    * Messages & message to oneself信息&给自己的信息
+
     * Activation: processing a message.
     * Construction of a new object.
 
