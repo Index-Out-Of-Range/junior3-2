@@ -151,9 +151,21 @@ Activity不一样，activity会被中断，如按了stop则activity被无条件�
 * It is unnecessary to name the states
 ![](/images/2019年4月6日/2019-04-06_165400.png)
 
+#### Analysis of the preliminary statecharts
+* The process can be divided into three stages:
+    1. The machine waits for the user to select a ticket type;
+    2. The user inserts coins into the machine;
+    3. When the inserted coins is enough, the machine issues the ticket. Return to stage 1.
 
+* Most stages correspond to states directly. But for the stages (e.g. stage 3) that only span short periods of duration, we can model them by actions.
 
+![](/images/2019年4月6日/2019-04-06_165534.png)
 
+* To model the alternative way:entering money before selecting a ticket type
+    * Starting from the “idle” state, there is no transition labeled “coin”.
+        => We need to create a new state
+
+![](/images/2019年4月6日/2019-04-06_165718.png)
 
 
 
