@@ -15,3 +15,55 @@
 * 使得代码更通用：设计模式目标之一
 ![](/images/2019年4月6日/2019-04-06_192345.png)
 
+
+
+```
+#include <iostream>
+#include <vector>
+#include <list>
+#include <math.h>
+using namespace std;
+
+template <class Container>
+void Display_Container(Container c)
+{
+	Container::iterator it;
+	for (it=c.begin(); it!=c.end(); it++)
+		cout << *it << " ";
+	cout << endl;
+}
+template <class Container>
+void Sort(Container & c)
+{	Container::iterator it1, it2;
+	Container::value_type  temp;
+		
+	for (it1=c.begin(); it1!=c.end(); it1++) {
+		for (it2=it1; it2!=c.end(); it2++) {
+			if ( *it1 > *it2 ) {
+				temp = *it1;
+				*it1 = *it2;
+				*it2 = temp;			
+			}
+		}	    
+	}
+}
+int main()
+{  
+	vector <int> v;   
+	list <double> l;   
+
+	for (int i=10; i>=0; i--) {
+		v.push_back(i);
+		l.push_back( sin(i*3.14) );
+	}
+	Display_Container(v);    
+	Display_Container(l);  
+	Sort( v );     
+	Sort( l );
+	Display_Container(v);    
+	Display_Container(l);  
+	return 0;
+}
+```
+
+
