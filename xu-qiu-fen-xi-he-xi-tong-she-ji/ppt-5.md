@@ -205,6 +205,35 @@ when:指定某一时刻，会触发一个事件
 动作状态(Action state):不能被外部事件中断。
 活动状态(Activity states):可以被外部事件中断。它有更复杂的语义。
 
+* Without action states, some transitions must be repeated.
+![](/images/2019年4月6日/2019-04-06_171401.png)
+
+* With action states, we get a clearer figure.
+![](/images/2019年4月6日/2019-04-06_171448.png)
+
+#### The complete statechart for the ticket machine
+![](/images/2019年4月6日/2019-04-06_171521.png)
+
+## Question
+#### Q1:
+* Suppose that the ticket selection buttons are deactivated once a ticket type has been selected, and only reactivated at the end of a transaction.
+> 假设一旦选择了票券类型，票券选择按钮就被禁用，并且只在事务结束时重新激活。
+
+#### Q2:
+* Suppose that once enough money has been entered to pay for the required ticket, the coin entry slot is closed, and only reopened once any ticket and change has been issued.
+> 假设已经输入了足够的钱来支付所需的票款，那么硬币进入槽就关闭了，只有在发出任何票款和更改之后才重新打开。
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
