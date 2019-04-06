@@ -68,9 +68,71 @@ Mixin class：即表示多继承关系，同时一种设计模式
 
 #### Mixin class
 * A mixin class: is intended to provide an optional interface or functionality to other classes. The functionality should be independent with that of the existing classes.
-
+> 旨在为其他类提供可选的接口或功能。功能应该独立于现有类的功能。
 * It is similar to an abstract classes in that it’s not intended to be instantiated. 
+> 它类似于抽象类，因为它不打算实例化
 * Mixin classes require multiple inheritance.
+> Mixin类需要多重继承。
+
+* Illustration of mixin classes
+![](/images/2019年4月6日/2019-04-06_143802.png)
+> Mixin class 是附加类。当需要这些功能时，继承该类即可。
+
+* If without mixin class
+![](/images/2019年4月6日/2019-04-06_144134.png)
+
+* With Mixin class
+![](/images/2019年4月6日/2019-04-06_144513.png)
+> Acount是基本类
+Chequebook作为附加功能
+
+* Discriminators（鉴别器）
+![](/images/2019年4月6日/2019-04-06_144755.png)
+> Discriminator即为分类的标准
+
+## Implementing associations
+* Uni-directional links
+    * simple to implement
+    > 易于实现
+    * Will lead to problems if they are later modified to bi-directional links
+    > 如果以后修改为双向链接会导致问题吗
+* Bi-directional links
+    * Complex to implement => consistency
+    > 实现复杂
+    * With no risk
+* Both styles of implementation should be hidden from client code
+> 这两种实现风格都应该对客户机代码隐藏
+> Uni-directional: 单一方向可抵达性 通过A到达B，不能从B到A
+Bi- xxx: 互相。。强调一致性
+单向的简单，但是不利于软件的演化；**双向的维护一致性较为麻烦**
+
+#### Uni-directional implementations
+* The multiplicity at the tail of the arrow has no effect on the implementation
+> 箭头尾部的多重性对实现没有影响
+* Mutable and immutable associations
+> 可变和不可变关联
+* To implement the semantic(语义的) correctly, we need:
+    * Proper declarations of data members, *and*
+    * Proper definitions of member functions
+    
+* ![](/images/2019年4月6日/2019-04-06_150213.png)
+> 讨论mutable和immutable时一定要考虑方向
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
