@@ -295,6 +295,12 @@ main()
 
 ![](/images/2019年4月6日/2019-04-06_152256.png)
 
+#### Implementation of association classes
+* Solution: Transform the association class into a simple class linked to the two original classes
+
+* The interface of the two original classes should be kept unchanged.
+
+* The implementation changed the meaning of the original class diagram. Further constraints should be imposed on the implementation. 
 
 
 
