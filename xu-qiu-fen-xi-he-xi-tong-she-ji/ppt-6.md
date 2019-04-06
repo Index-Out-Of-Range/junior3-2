@@ -306,22 +306,33 @@ the Basic_class must take care of the interface elements
 
 #### Applicability
 * To add or remove responsibilities at run-time
+> 在运行时添加或删除职责
 * The component class does not have to know anything about its decorators.
+> 组件类不需要知道关于它的装饰器的任何信息。
 * Comparison between decorator pattern and composite pattern
 	* Decorator pattern is a degenerate composite pattern
+	> 装饰器模式是一种退化的组合模式
 	* Intentions are different
+	> 意图是不同的
+	
 		* Decorator: for adding additional functionalities
+		> 修饰符:用于添加附加功能
 		* Composite: for object aggregation
+		> 组合:用于对象聚合
 
 #### Implementation
 Keeping the component class lightweightOtherwise, the decorators will be too heavyweight  to use
+> 如果保持组件类的轻量级，装饰器将过于重量级而无法使用
 
 #### An example
 * I/O stream class
 	* Basic functionality: convert objects into bytes to store into a file or a memory block.
+	> 基本功能:将对象转换为字节存储到文件或内存块中。
 	* Additional functionalities:
 		* Data compression
 		* Convert to 7-bit ASCII characters
+		> 数据压缩
+		转换为7位ASCII字符
 
 #### Solution 1: using flags => Fat root class
 ![](/images/2019年4月6日/2019-04-06_214132.png)
