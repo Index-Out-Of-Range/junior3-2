@@ -113,6 +113,10 @@ int main()
 	* User Operations
 	* Spelling checking and hyphenation(连字符)
 
+#### Document structure
+![](/images/2019年4月6日/2019-04-06_201054.png)
+> The document has a tree-like structure
+这些元素跟用户交互时有一些相同的行为。因此在构想的时候，不仅仅考虑数据方面，更要考虑行为相似性上。
 
 
 
