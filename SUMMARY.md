@@ -11,6 +11,7 @@
   * [PPT-3](xu-qiu-fen-xi-he-xi-tong-she-ji/ppt-3.md)
   * [PPT-4](xu-qiu-fen-xi-he-xi-tong-she-ji/ppt-4.md)
   * [PPT-5](xu-qiu-fen-xi-he-xi-tong-she-ji/ppt-5.md)
+  * [PPT-6](xu-qiu-fen-xi-he-xi-tong-she-ji/ppt-6.md)
   * [个人总结](xu-qiu-fen-xi-he-xi-tong-she-ji/ge-ren-zong-jie.md)
 * [软件工程](ruan-jian-gong-cheng.md)
   * [Week-2](ruan-jian-gong-cheng/week-2.md)
