@@ -256,11 +256,24 @@ void Composition::Compose() {
 -- by class inheritance
 ![](/images/2019年4月6日/2019-04-06_213019.png)
 * Drawbacks:
-	* You can not extend or remove the functionalityat run-time. 
+	* You can not extend or remove the functionality at run-time. 
 	* If there are many decorative functionalities, number of subclasses will explode.
+	> 如果有许多装饰功能，子类的数量将会暴增。
 
+#### Solutions for appending additional functionalities
+-- by mixin class
+Solutions for appending additional functionalities
+-- by mixin class
+![](/images/2019年4月6日/2019-04-06_213133.png)
+* Drawbacks: 
+	* similar to that of the solution of class inheritance
 
-
+#### Solutions for appending additional functionalities
+-- by class composition (#1)
+![](/images/2019年4月6日/2019-04-06_213221.png)
+* Drawbacks:
+	* Interface of the two classes are different
+	* Difficult to recursively decorate
 
 
 
