@@ -242,7 +242,8 @@ public:
     Account * pAccount;  
     int j;
     Guarantor(Account * a){
-        pAccount = a;   j = 200;
+        pAccount = a;   
+        j = 200;
         g();		  
         //a->f();
         //cout << a->i;
@@ -263,8 +264,36 @@ main ()
 但是，如果A::f不是虚的，则可以正确地执行“A ->f()”行。
 a还没有初始值
 
+#### Implementing qualifiers
+![](/images/2019年4月6日/2019-04-06_152218.png)
 
 
+
+```
+#include <iostream>
+#include <string>
+#include <map>
+using namespace std;
+main()
+{ 
+    // a map of expenditure
+    map<string, double> exp; 
+    string item;   
+    double cost;
+    while (cin>>item >>cost)
+        exp[ item ] += cost;
+    double total=0;
+    map<string,double>::iterator p;
+    for (p=exp.begin(); p!=exp.end(); p++){
+        total += p->second;
+        cout << p->first << ": " << p->second << endl;
+    }
+    cout << "total expenditure: " << total;
+}
+```
+
+
+![](/images/2019年4月6日/2019-04-06_152256.png)
 
 
 
