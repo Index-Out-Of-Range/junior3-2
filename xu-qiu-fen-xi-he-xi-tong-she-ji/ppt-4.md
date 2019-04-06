@@ -76,9 +76,18 @@ Sequence图是软件设计迈出的第一步：为了实现这个用例，应该
     * Only one active diagrams
         => We need a “DiagramEditor” object
     * The “DiagramEditor” should have a link 
+![](/images/2019年4月6日/2019-04-06_154549.png)
 
+* A sequence diagram
+![](/images/2019年4月6日/2019-04-06_154643.png)
 
-
+* Elements in a sequence diagram
+    * Objects are shown at the top.
+    * Time flows downward.
+    * Lifeline.
+    * Messages & message to oneself
+    * Activation: processing a message.
+    * Construction of a new object.
 
 
 
