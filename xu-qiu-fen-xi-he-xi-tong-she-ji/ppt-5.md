@@ -75,8 +75,24 @@ do/做完的时候出发complete，要执行completion transitions
 Activity不一样，activity会被中断，如按了stop则activity被无条件中断。
 如果没有被中断，则执行完会执行completion trans
 
+#### Internal transition: 
+* Some events cause transitions to the current state, but without triggering the execution of the entry and exit actions.
+> 有些事件会导致转换到当前状态，但不会触发进入和退出操作的执行。
+* ![](/images/2019年4月6日/2019-04-06_163917.png)
+> internal transition：状态里面要做一些动作
+用户点击info，会出现一些时间等信息，但这时还是处于play状态。换句话说不会执行entry and exit action
 
+## Composite states
+> 复合状态 目的：使uml图更加简单，并不添加新的状态
 
+* For complex systems, statecharts are often too complex for producing and understanding.
+> 对于复杂的系统，状态集通常过于复杂，无法生成和理解。
+* Composite states are used just for simplifying the statecharts.
+> 复合状态仅用于简化状态集。
+* Applicability: for states which have the common transitions (outgoing or incoming)
+> 适用性:对于具有公共转换(传出或传入)的状态
+* The states above are grouped together to form a composite state; the individual states are called substates.
+> 将上述状态组合在一起形成复合状态;单独的状态称为子状态。
 
 
 
