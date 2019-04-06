@@ -99,6 +99,13 @@ Activity不一样，activity会被中断，如按了stop则activity被无条件�
 使得两个跳转变成一个跳转。
 如果复合状态中有一个子状态是活动的，我们就说复合状态是活动的，且任何时刻只有一个子状态是活动的
 
+#### Properties of composite states
+* If a composite state is active, exactly one of its substate must also be active
+* Outgoing transition: can flow from the composite state, or from a substate
+* Incoming transition: can flow to the composite state, or to a substate
+* Initial state: becomes active when an incoming transition reaches at the boundary
+* Final state: when ongoing activity has finished; issue completion transitions
+* Entry/exit actions
 
 
 
