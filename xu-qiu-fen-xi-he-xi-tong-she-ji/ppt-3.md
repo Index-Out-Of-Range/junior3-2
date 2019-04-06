@@ -150,7 +150,7 @@ main()
 }
 ```
 
-* Bidirectional implementation
+#### Bidirectional implementation
 ![](/images/2019年4月6日/2019-04-06_150806.png)
 > 拥有一个account的时候可以申请可以不申请debitcard
 拥有Debitcard一定对应一个account
@@ -211,11 +211,50 @@ main()
 	a1.addCard();
 }
 ```
+> 只给其中一个类指定维护关联的责任。
+类DebitCard的“private”和“friend”:确保只有Account类可以创建指向对象的链接
+类DebitCard。
+所有的创建都在一个成员函数中完成;
+
+#### Bidirectional implementation: both directions are immutable(不可变的)
+* A typical mistake: want to create the link within a single step.
+![](/images/2019年4月6日/2019-04-06_151523.png)
 
 
 
+```
+#include <iostream>
+using namespace std;
+class Guarantor;
+class Account {
+  public:
+	Guarantor * pGuarantor;	  
+	int i;
+	Account( Guarantor * g) {
+		pGuarantor = g;
+		i = 100;	
+              f();
+	}
+	virtual f()  {cout << "f\n"; }
+};
+class Guarantor {
+public: Account * pAccount;  
+    int j;
+    Guarantor(Account * a){
+		  pAccount = a;   j = 200;
+		  g();		  
+		  //a->f();
+		  //cout << a->i;
+	}
+	virtual g(){ cout << "g\n"; }
+};
+main ()
+{  Account *a = new Account(new Guarantor(a) ); 
+    cout << a->pGuarantor->j;
+    //cout << a->pGuarantor->pAccount->i;
+}
 
-
+```
 
 
 
