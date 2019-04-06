@@ -175,7 +175,7 @@ Activity不一样，activity会被中断，如按了stop则activity被无条件�
     * Entering some coins ( but not enough)
     * Select a ticket type
     * Continue to enter coins
-We could create a new state. But eventually we find the new state is as the same as the existing one 
+* sWe could create a new state. But eventually we find the new state is as the same as the existing one 
 
 
 
