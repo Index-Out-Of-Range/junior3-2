@@ -175,9 +175,16 @@ Activity不一样，activity会被中断，如按了stop则activity被无条件�
     * Entering some coins ( but not enough)
     * Select a ticket type
     * Continue to enter coins
-* sWe could create a new state. But eventually we find the new state is as the same as the existing one 
+* We could create a new state. But eventually we find the new state is as the same as the existing one 
+![](/images/2019年4月6日/2019-04-06_170812.png)
 
-
+#### Time events
+* Each state is supposed to contain an internal timer.
+* The timer is reset every time the state is entered.
+* The “after” event
+* The “when” event
+> after:经过某一时刻，会触发一个时间
+when:指定某一时刻，会触发一个事件
 
 
 
