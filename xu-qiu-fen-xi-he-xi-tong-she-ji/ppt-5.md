@@ -25,3 +25,45 @@
 * (Active) state, event (triggers) and transitions
 > (活动)状态、事件(触发)和转换
 
+#### Components of a statechart
+* State
+* Event
+* Transition(过渡；转变)
+* Initial and final states
+* Actions 
+
+* The CD player example
+![](/images/2019年4月6日/2019-04-06_161923.png)
+> 不同的按钮在不同的状态下有不同的功能。
+
+## Guard conditions and actions
+* Guard condition: 当某个条件被满足的时候，才会发生跳转。中括号。
+如在closed中按play在【no cd】和【cd present】条件下跳转的状态是不同的
+![](/images/2019年4月6日/2019-04-06_162140.png)
+
+## Entry and exit actions
+* Entry actions are performed every time a state becomes active, immediately after actions on transitions leading to the state have completed.
+> 每次状态变为活动状态时，都会立即执行条目操作，这是在导致状态的转换操作完成之后执行的。
+
+* Exit actions: are performed whenever a transition is fired to leave the state.
+> 退出操作:在触发转换以离开状态时执行。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
