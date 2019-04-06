@@ -55,6 +55,16 @@
 ![](/images/2019年4月6日/2019-04-06_154115.png)
 > 先要实现右边的才能实现左边的
 
+#### Realization of a use case
+* Describe how a set of objects can interact with each other to implement the use case.
+    * For designer: to build up an understanding of the objects, classes and interactions
+    * The first step of design
+    * Do not consider the GUI elements
+* Notation: interaction diagrams
+    * Sequence diagrams (more informative)
+    * collaboration diagrams (more concise)
+> 用例图丝毫不考虑软件是怎么设计，只考虑需求
+Sequence图是软件设计迈出的第一步：为了实现这个用例，应该有哪些对象，这些对象应该怎样协同工作去实现用例
 
 
 
