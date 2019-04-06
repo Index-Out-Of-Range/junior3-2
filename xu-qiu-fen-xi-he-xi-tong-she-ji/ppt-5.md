@@ -112,6 +112,44 @@ Activity不一样，activity会被中断，如按了stop则activity被无条件�
 > 最终状态:正在进行的活动结束时;问题完成转换
 * Entry/exit actions
 
+* 复合状态和普通状态一样，也会有他自己的初始状态和结束状态，如果有从外界到复合状态边缘，则会按照顺序。并且有entry action
+![](/images/2019年4月6日/2019-04-06_164628.png)
+
+## History states
+> 最近从哪一次复合状态跳出的，就叫历史状态
+
+* Requirement: if the “play” button is pressed, return to the CD player’s previous state, either “playing” or “paused”
+* The composite state can remember a history state, denoted by an “H” state.
+> 复合状态可以记住历史状态，用“H”表示。
+
+![](/images/2019年4月6日/2019-04-06_164808.png)
+> “play”转换的实际行为:
+如果CD播放机正在播放，如果按下“播放”按钮，它应该从曲目开始播放，但是如果暂停，它应该一直暂停，直到再次按下暂停按钮。
+要插入历史状态，只需双击“Busy”状态。
+上面蓝色的指向H代表用户按下播放按钮,原来是play状态就转到play状态,原来是暂停状态就转到暂停状态。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
