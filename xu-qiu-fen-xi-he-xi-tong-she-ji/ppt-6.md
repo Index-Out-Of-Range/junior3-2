@@ -244,8 +244,20 @@ void Composition::Compose() {
 }
 ```
 
+#### Decorator pattern
+* Intention
+“Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to sub-classing for extending functionality.”
+> 动态地为对象附加额外的职责。装饰器为扩展功能提供了一个灵活的子类化替代方案。
 
+* It is some individual objects (not an entire class) to which the functionality is extended. E.g, borders, scrolling bars.
+> 将功能扩展到某些单独的对象(而不是整个类)。例如，边框，滚动条。
 
+#### Solutions for appending additional functionalities
+-- by class inheritance
+![](/images/2019年4月6日/2019-04-06_213019.png)
+* Drawbacks:
+	* You can not extend or remove the functionalityat run-time. 
+	* If there are many decorative functionalities, number of subclasses will explode.
 
 
 
