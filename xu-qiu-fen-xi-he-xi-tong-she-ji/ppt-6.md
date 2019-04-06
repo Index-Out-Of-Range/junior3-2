@@ -304,7 +304,7 @@ the Basic_class must take care of the interface elements
 #### General structure of the decorator pattern
 ![](/images/2019年4月6日/2019-04-06_213908.png)
 
-## Applicability
+#### Applicability
 * To add or remove responsibilities at run-time
 * The component class does not have to know anything about its decorators.
 * Comparison between decorator pattern and composite pattern
@@ -313,14 +313,69 @@ the Basic_class must take care of the interface elements
 		* Decorator: for adding additional functionalities
 		* Composite: for object aggregation
 
+#### Implementation
+Keeping the component class lightweightOtherwise, the decorators will be too heavyweight  to use
 
+#### An example
+* I/O stream class
+	* Basic functionality: convert objects into bytes to store into a file or a memory block.
+	* Additional functionalities:
+		* Data compression
+		* Convert to 7-bit ASCII characters
 
+#### Solution 1: using flags => Fat root class
+![](/images/2019年4月6日/2019-04-06_214132.png)
+> 缺点:流的所有对象都有属性“bCompress”、“bTo7Bits”，以及特定于数据压缩和数据转换的操作，甚至您想要的是一个纯MemoryStream对象，它没有额外的功能和属性。
 
+#### Solution 2:using decorator pattern
+![](/images/2019年4月6日/2019-04-06_214234.png)
 
+#### Code segments to use the decorator pattern
 
+Stream * fStream = new FileStream("test.cpp");
+Stream * mStream = new MemoryStream();
+Stream * fcStream = new CompressingStream(
+                        new FileStream("test.cpp") );
+Stream * f7Stream = new ASCII7Stream ( new FileStream("test.cpp") );
+Stream * fc7Stream = new CompressingStream( 
+new ASCII7Stream ( new FileStream("test.cpp") ));
 
+fc7Stream->PutInt(12);
+fc7Stream->PutString("hello");
 
+#### A Java example
+import java.io.*;
+import java.util.zip.*;
 
+public class GZIPCompress {
+  public static void main ( String [ ] args ) 
+  throws IOException {
+    BufferedReader in = 
+	    new BufferedReader (
+		    new FileReader( args[0] ) );
+	
+	
+    BufferedOutputStream out =
+        new BufferedOutputStream (
+		    new GZIPOutputStream (
+			    new FileOutputStream(args[1] ) ));
 
+	System.out.println("Compressing file...");
+	int c;
+	while ( (c = in.read()) != -1 )
+	    out.write(c);
+	in.close();
+	out.close();
+System.out.println("Verifying file...");
+	BufferedReader in2 =
+	    new BufferedReader (
+		    new InputStreamReader (
+			    new GZIPInputStream (
+				    new FileInputStream( args[1] ) )));
+	String s;
+	while ( (s = in2.readLine())  != null )
+		System.out.println(s);
+  }
+}
 
 
