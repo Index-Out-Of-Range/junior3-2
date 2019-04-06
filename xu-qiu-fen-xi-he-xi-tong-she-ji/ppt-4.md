@@ -116,28 +116,29 @@ Sequence图是软件设计迈出的第一步：为了实现这个用例，应该
 > Can also be used in collaboration diagram
 当然，对于简单的序列图，没有必要进行编号。
 
+* Conditional messages
+![](/images/2019年4月6日/2019-04-06_160100.png)
+> n:零件的数量。c:指定零件目录。
 
+#### Message to oneself
+* It represents implementation details.
+> 它表示实现细节。
+* But when the return value of the message is used in the further messages, it should be made explicit.
+* It causes recursive activity(会导致递归)
+![](/images/2019年4月6日/2019-04-06_160231.png)
 
+#### Asynchronous message and multiple threads（异步消息和多线程）
+* 一半箭头是异步消息，不会等待
+![](/images/2019年4月6日/2019-04-06_160318.png)
 
+* Competition between messages
+![](/images/2019年4月6日/2019-04-06_160353.png)
 
+#### Extension of use case
+![](/images/2019年4月6日/2019-04-06_160420.png)
 
+#### The complete use case diagram
+![](/images/2019年4月6日/2019-04-06_160532.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#### Generalization between actors
+![](/images/2019年4月6日/2019-04-06_160545.png)
