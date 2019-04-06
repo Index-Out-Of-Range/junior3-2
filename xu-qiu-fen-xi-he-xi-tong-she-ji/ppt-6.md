@@ -198,7 +198,9 @@ public:
 		* void SetComposition ( Composition* )
 		* virtual void Compose( )
 
-
+![](/images/2019年4月6日/2019-04-06_205750.png)
+> 简单排版：速度比较快
+被处理的对象和处理策略分离开。使得可以动态切换策略
 
 
 
