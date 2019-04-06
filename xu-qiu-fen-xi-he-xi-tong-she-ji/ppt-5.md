@@ -189,6 +189,7 @@ when:指定某一时刻，会触发一个事件
 ![](/images/2019年4月6日/2019-04-06_170905.png)
 
 ## Action states
+> 这一状态,不会响应任何事件,会有完成过渡
 * Purpose of using action states: to avoid repetitions of transitions.
 > 避免过渡的重复。
 * An action state represents a period of time during which an object is performing some internal processing
@@ -202,7 +203,7 @@ when:指定某一时刻，会触发一个事件
 两者的区别是:
 动作状态(Action state):不能被外部事件中断。
 活动状态(Activity states):可以被外部事件中断。它有更复杂的语义。
-这一状态,不会响应任何事件,会有完成过渡
+
 
 
 
