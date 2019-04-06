@@ -231,9 +231,9 @@ class Account {
 	Guarantor * pGuarantor;	  
 	int i;
 	Account( Guarantor * g) {
-		pGuarantor = g;
-		i = 100;	
-              f();
+	pGuarantor = g;
+	i = 100;	
+        f();
 	}
 	virtual f()  {cout << "f\n"; }
 };
