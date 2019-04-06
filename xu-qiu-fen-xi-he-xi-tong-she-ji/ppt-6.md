@@ -118,7 +118,18 @@ int main()
 > The document has a tree-like structure
 这些元素跟用户交互时有一些相同的行为。因此在构想的时候，不仅仅考虑数据方面，更要考虑行为相似性上。
 
+#### Features
+* A substructure may contain other substructures (recursive).
+> 子结构可以包含其他子结构(递归的)。
+* Text and graphics are treated uniformly.
+> 文本和图形被统一处理。
 
+	* A figure can be embedded into a line of text
+	> 图形可以嵌入到一行文本中
+	* Characters can be embedded into a figure
+	> 字符可以嵌入到图形中
+* Single element and a group of elements are treated uniformly (move, set font, etc).
+> 单个元素和一组元素被统一处理(移动、设置字体等)。
 
 
 
