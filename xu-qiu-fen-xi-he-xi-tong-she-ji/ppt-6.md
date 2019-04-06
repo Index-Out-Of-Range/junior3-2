@@ -94,11 +94,24 @@ int main()
 * Drawbacks of using design patterns
 	* Complicate the design
 	* Degrade the performance of the system, in terms of space and time requirements.
+	> 在空间和时间方面降低了系统的性能。
 * Only use design patterns if you want:
 	* Flexibility
 	* Extensibility
-	* portability
+	* portability(可移植性)
 
+## A case study: designing a document editor
+#### Design problems
+* A WYSIWYG document editor
+* Design problems
+	* Document structure
+	* Formatting
+	* Embellishing the user interface
+	> 美化用户界面
+	* Multiple look-and-feel standards
+	> 多种外观标准
+	* User Operations
+	* Spelling checking and hyphenation(连字符)
 
 
 
