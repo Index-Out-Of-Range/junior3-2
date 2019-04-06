@@ -185,14 +185,15 @@ public:
 	> 缺点:很难约束组合对象，使它们只能包含某些类型的组件。
 
 #### Composition and compositor
-Composition
-Initially, it contains the un-formatted objects (characters, figures, etc).
-The formatting algorithms insert structural objects ( Rows, Columns, etc) into it.
-Compositor
-Different formatting algorithms are encapsulated into the class
-Interface
-void SetComposition ( Composition* )
-virtual void Compose( )
+> Composition可以理解为作品，compositor可以理解为作者
+* Composition
+	* Initially, it contains the un-formatted objects (characters, figures, etc).
+	* The formatting algorithms insert structural objects ( Rows, Columns, etc) into it.
+* Compositor
+	* Different formatting algorithms are encapsulated into the class
+	* Interface
+		* void SetComposition ( Composition* )
+		* virtual void Compose( )
 
 
 
