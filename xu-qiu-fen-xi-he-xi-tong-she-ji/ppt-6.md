@@ -188,9 +188,12 @@ public:
 > Composition可以理解为作品，compositor可以理解为作者
 * Composition
 	* Initially, it contains the un-formatted objects (characters, figures, etc).
+	> 最初，它包含未格式化的对象(字符、图形等)。
 	* The formatting algorithms insert structural objects ( Rows, Columns, etc) into it.
+	> 格式化算法将结构对象(行、列等)插入其中。
 * Compositor
 	* Different formatting algorithms are encapsulated into the class
+	> 不同的格式化算法被封装到类中
 	* Interface
 		* void SetComposition ( Composition* )
 		* virtual void Compose( )
