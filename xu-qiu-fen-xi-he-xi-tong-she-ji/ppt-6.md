@@ -158,9 +158,11 @@ public:
 ```
 
 #### The composite pattern
-* Applicability
+* Applicability（适用性）
 	* Part-whole hierarchies
+	> Part-whole层次结构
 	* Single object and composite object are treated uniformly
+	> 对单目标和复合目标进行统一处理
 * Structure
 * Participants
 	* Component
@@ -169,7 +171,18 @@ public:
 		* accessing and managing its child components
 		* Accessing a component’s parent
 
+![](/images/2019年4月6日/2019-04-06_202759.png)
+> 共同的结构为operation()
 
+#### Composite pattern
+* Collaborations:
+	* The composite object iteratively call the leaf’s operation
+	> 复合对象迭代地调用叶子的操作
+* Consequences:
+	* Extensibility: it is easier to add new kinds of components
+	> 可扩展性:添加新的组件更容易
+	* Disadvantage: it is hard to constraint the composite objects such that they can only include certain kinds of components.
+	> 缺点:很难约束组合对象，使它们只能包含某些类型的组件。
 
 
 
