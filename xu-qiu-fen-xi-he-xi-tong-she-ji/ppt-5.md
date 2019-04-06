@@ -101,10 +101,15 @@ Activity不一样，activity会被中断，如按了stop则activity被无条件�
 
 #### Properties of composite states
 * If a composite state is active, exactly one of its substate must also be active
+> 如果一个复合状态是活动的，那么它的子状态中必须有一个也是活动的
 * Outgoing transition: can flow from the composite state, or from a substate
+> 传出转换:可以从复合状态流，也可以从子状态流
 * Incoming transition: can flow to the composite state, or to a substate
+> 传入转换:可以流到复合状态，也可以流到子状态
 * Initial state: becomes active when an incoming transition reaches at the boundary
+> 初始状态:当传入的转换到达边界时变为活动状态
 * Final state: when ongoing activity has finished; issue completion transitions
+> 最终状态:正在进行的活动结束时;问题完成转换
 * Entry/exit actions
 
 
