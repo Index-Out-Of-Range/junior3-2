@@ -10,3 +10,5 @@
 泛化(Generalization)
 
 ## 类图中符号的具体信息
+
+## extent,include
