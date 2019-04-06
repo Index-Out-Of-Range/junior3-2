@@ -78,7 +78,16 @@ int main()
 	* Language and implementation issues
 	* Impact on a system’s  flexibility, extensibility, and portability.
 	
-	
+#### Roles design patterns play
+* Application programs
+	* Use design patterns to reduce the class dependencies, platform dependencies, etc.
+* Toolkit
+	* Use design pattern for code reuse
+	* For example: containers, iterators and algorithms in C++ STL.
+* Frameworks
+	* Emphasize design reuse
+	* Use of patterns in a framework makes learning the usage of the framework easier
+
 
 
 
