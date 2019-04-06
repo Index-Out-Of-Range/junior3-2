@@ -128,15 +128,26 @@ Activity不一样，activity会被中断，如按了stop则activity被无条件�
 要插入历史状态，只需双击“Busy”状态。
 上面蓝色的指向H代表用户按下播放按钮,原来是play状态就转到play状态,原来是暂停状态就转到暂停状态。
 
+![](/images/2019年4月6日/2019-04-06_165001.png)
+> 如果历史状态是要激活的第一个状态，则应指定默认状态。
+如果之前没有H,为空的时候,则用蓝线表明进入玩状态
 
+![](/images/2019年4月6日/2019-04-06_165054.png)
 
+## A “real” example
+* Description of the automatic ticket machine
+    * You select a type of ticket
+    * The machine displays how much money you should continue to pay.
+    * You insert coins
+    * Two modes: “Change available” or  “Exact money required”
+    * You have the option of entering money before selecting a ticket type
+    * Cancel: press the “cancel” button or keep silence for 30 seconds
 
-
-
-
-
-
-
+#### Preliminary statechart(初步的状态)
+* A single (the most common) transaction
+* Every event leads to a transition between two states
+* It is unnecessary to name the states
+![](/images/2019年4月6日/2019-04-06_165400.png)
 
 
 
