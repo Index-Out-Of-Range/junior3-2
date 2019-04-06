@@ -297,13 +297,36 @@ main()
 
 #### Implementation of association classes
 * Solution: Transform the association class into a simple class linked to the two original classes
+> 解决方案:将关联类转换为链接到两个原始类的简单类
 
 * The interface of the two original classes should be kept unchanged.
+> 这两个原始类的接口应该保持不变。
 
 * The implementation changed the meaning of the original class diagram. Further constraints should be imposed on the implementation. 
+> 实现改变了原始类图的含义。应该对执行工作施加进一步的限制。
 
 ![](/images/2019年4月6日/2019-04-06_152511.png)
 > 具体实现只能采用下面这种类图来替换associations class
+
+
+
+```
+class Registration {
+    Student * pStudent;
+    int mark; // the attribute of the link
+public:
+    Registration(Student* st) {
+    pStudent = st;   mark=0; }
+};
+class Module {
+    vector<Registration*> registrations;
+public:
+    void enrol(Student* st) { // interface remains
+        registrations.push_back(new Registration(st));
+    }
+}
+```
+
 
 
 
