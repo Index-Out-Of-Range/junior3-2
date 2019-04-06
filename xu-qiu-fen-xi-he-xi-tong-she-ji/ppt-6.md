@@ -202,6 +202,12 @@ public:
 > 简单排版：速度比较快
 被处理的对象和处理策略分离开。使得可以动态切换策略
 
+#### Strategy pattern
+* Applicability
+	* You need different variants of an algorithm.
+	* Some algorithms use data that clients should not know about.
+	* Essential point: separator the algorithms from the data.
+* Structure
 
 
 
