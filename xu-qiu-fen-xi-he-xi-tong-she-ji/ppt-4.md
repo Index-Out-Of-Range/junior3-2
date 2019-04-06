@@ -41,6 +41,35 @@
     * A basic course of events
     * Alternative courses
     * Exceptional courses
+* The use case diagram of the diagram editor example
+![](/images/2019年4月6日/2019-04-06_153912.png)
+
+#### Generalization and Specialization
+* Abstract use case, Explanation for a use case
+![](/images/2019年4月6日/2019-04-06_153954.png)
+
+#### Inclusion of use case(包含用例)
+* Stereotype: specification of a relationship
+> 原型:关系的规范
+
+![](/images/2019年4月6日/2019-04-06_154115.png)
+> 先要实现右边的才能实现左边的
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
