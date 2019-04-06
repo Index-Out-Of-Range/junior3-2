@@ -150,6 +150,68 @@ main()
 }
 ```
 
+* Bidirectional implementation
+![](/images/2019年4月6日/2019-04-06_150806.png)
+> 拥有一个account的时候可以申请可以不申请debitcard
+拥有Debitcard一定对应一个account
+Mutable的含义：在account的生存期之间，可以对应多个debitcard但同一时间最多一个
+
+
+
+```
+class DebitCard;
+class Account {
+	DebitCard * card;
+public:
+	DebitCard& getCard() {}
+    void setCard(DebitCard & p_card ) {}
+    void removeCard() {}
+};
+class DebitCard{
+	Account * theAccount;
+public:
+	DebitCard(Account & a) {}
+	getAccount(){} 
+}
+main() 
+{
+	Account a1;
+	Account a2;
+	DebitCard card1(a1);
+	a1.setCard(card1); 
+	//a2.setCard(card1);  cause problem!
+}
+```
+* A better solution
+
+
+
+```
+class Account;
+class DebitCard{
+	Account * theAccount;
+private:
+	DebitCard(Account & a) {}
+public:	
+	getAccount(){} 
+	friend class Account;
+};
+class Account {
+	DebitCard * card;
+public:
+    void addCard() {
+		card = new DebitCard(*this);
+	}
+    DebitCard& getCard() {}
+    void removeCard() {}
+};
+main() 
+{
+	Account a1;
+	a1.addCard();
+}
+```
+
 
 
 
