@@ -270,7 +270,7 @@ when:指定某一时刻，会触发一个事件
     > 每个状态类只为它感兴趣的消息重新定义函数。
     * Each state is capable of destroying itself, creating a new object representing a new state, and setting the current state to the new state.
     => bidirectional association between class A and the root class is necessary.
-
+    > 每个状态都能够自我销毁，创建一个表示新状态的新对象，并将当前状态设置为新状态。=>类和根类之间的双向关联是必要的。
 
 ![](/images/2019年4月6日/2019-04-06_172451.png)
 
