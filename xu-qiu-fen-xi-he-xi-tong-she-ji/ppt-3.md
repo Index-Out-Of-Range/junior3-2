@@ -249,7 +249,8 @@ public: Account * pAccount;
 	virtual g(){ cout << "g\n"; }
 };
 main ()
-{  Account *a = new Account(new Guarantor(a) ); 
+{  
+    Account *a = new Account(new Guarantor(a) ); 
     cout << a->pGuarantor->j;
     //cout << a->pGuarantor->pAccount->i;
 }
