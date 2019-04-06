@@ -281,6 +281,13 @@ Solutions for appending additional functionalities
 * Drawbacks: 
 the Basic_class must take care of the interface elements
 
+#### Decorator pattern
+* The basic class is enclosed by a decorator class
+* The decorator class conforms to the interface of the basic class.
+* Implementation of the interface:
+* Forwards requests to the basic class
+* Perform any additional actions before or after the forwarding
+* Consequence: decorators can be nested recursively.
 
 
 
