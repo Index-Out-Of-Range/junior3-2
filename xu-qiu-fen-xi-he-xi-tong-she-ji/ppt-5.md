@@ -162,8 +162,11 @@ Activity不一样，activity会被中断，如按了stop则activity被无条件�
 ![](/images/2019年4月6日/2019-04-06_165534.png)
 
 * To model the alternative way:entering money before selecting a ticket type
+> 建模另一种方法:在选择票证类型之前输入货币
+
     * Starting from the “idle” state, there is no transition labeled “coin”.
         => We need to create a new state
+    > 从“空闲”状态开始，没有标记为“coin”的转换。=>我们需要创建一个新的状态
 
 ![](/images/2019年4月6日/2019-04-06_165718.png)
 
