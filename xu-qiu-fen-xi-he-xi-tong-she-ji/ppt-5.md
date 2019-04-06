@@ -170,8 +170,12 @@ Activity不一样，activity会被中断，如按了stop则activity被无条件�
 
 ![](/images/2019年4月6日/2019-04-06_165718.png)
 
-
-
+#### Integrating the transactions(整合转换)
+* To model the sequence: 
+    * Entering some coins ( but not enough)
+    * Select a ticket type
+    * Continue to enter coins
+We could create a new state. But eventually we find the new state is as the same as the existing one 
 
 
 
