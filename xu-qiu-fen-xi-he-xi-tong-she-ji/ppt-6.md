@@ -131,10 +131,43 @@ int main()
 * Single element and a group of elements are treated uniformly (move, set font, etc).
 > 单个元素和一组元素被统一处理(移动、设置字体等)。
 
+![](/images/2019年4月6日/2019-04-06_201510.png)
+* The abstract class: a common interface
+> 抽象类:公共接口
+* The aggregation association: describes the tree
+> 聚合关联:描述树
+
+> Intersects：判断是否和左边的元素交叉。
+以上这种模式叫做composite
+第二行前三个只能是leaf，最后一个可以是中间层
+
+#### The common interface
 
 
+```
+class Glyph {
+public:
+	virtual void Draw( Window * )=0;
+    virtual void Bounds( Rect & )=0;
+	virtual bool Intersects( const Point &)=0;
+	virtual void Insert(Glyph *, int)=0;
+    virtual void Remove(Glyph *)=0;
+    virtual Glyph * Child (int)=0;
+	virtual Glyph * Parent( )=0;
+}
+```
 
-
+#### The composite pattern
+* Applicability
+	* Part-whole hierarchies
+	* Single object and composite object are treated uniformly
+* Structure
+* Participants
+	* Component
+		* common interface
+		* default behaviors
+		* accessing and managing its child components
+		* Accessing a component’s parent
 
 
 
