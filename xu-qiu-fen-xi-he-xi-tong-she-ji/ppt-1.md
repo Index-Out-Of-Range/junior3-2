@@ -26,6 +26,10 @@
 * Easy to understand.
 * A valuable means for communication.
 
+* Analysis models
+* Design models
+
+
 #### Relationship between analysis models and design models
 * analysis models → design models
 * What if different languages are used for the two phases?
