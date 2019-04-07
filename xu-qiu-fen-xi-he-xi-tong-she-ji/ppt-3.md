@@ -49,6 +49,7 @@
   > 一个association class，它具有使其能够充当键的属性
 
 * Mapping from qualifier values to instances of the class at the other end of the association
+
   > 从限定符值映射到关联另一端的类的实例  
   > ![](/images/2019年4月6日/2019-04-06_141810.png)  
   > 0对应的是给定的name不存在该目录下。  
@@ -140,6 +141,7 @@
   > 讨论mutable和immutable时一定要考虑方向
 
 * ![](/images/2019年4月6日/2019-04-06_150628.png)
+
   ```
   #include <iostream>
   #include <vector>
