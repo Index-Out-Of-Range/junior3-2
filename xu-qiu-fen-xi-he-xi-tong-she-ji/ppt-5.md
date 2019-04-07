@@ -49,6 +49,7 @@
 ## Entry and exit actions
 
 * Entry actions are performed every time a state becomes active, immediately after actions on transitions leading to the state have completed.
+
   > 每次状态变为活动状态时，都会立即执行条目操作，这是在导致状态的转换操作完成之后执行的。  
   > Entry action：进入这个状态的准备工作。目的：指导我们在编码阶段要实现
 
