@@ -6,7 +6,6 @@
     * Fundamental elements of UML
         * Views
         * Diagrams
-
 * Chapter 2 Modeling with Objects
     * Properties, Navigibility(可导航性), Message Passing, 
     * Strength of OOP
