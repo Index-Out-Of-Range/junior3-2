@@ -1,10 +1,19 @@
-## 难点
-### Views
-* Use Case View
-* Design View
-* Implementation View
-* Process View
-* Deployment View
+## Outline of this course
+* Chapter 1 Introduction
+    * Why do we need modeling?
+    * What kinds of modeling methods available?
+    * Why do we need UML?
+    * Fundamental elements of UML
+        * Views
+        * Diagrams
+
+* Chapter 2 Modeling with Objects
+    * Properties, Navigibility(可导航性), Message Passing, 
+    * Strength of OOP
+
+
+
+
 
 # Chapter 1
 
