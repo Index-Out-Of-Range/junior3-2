@@ -13,8 +13,8 @@
   * [PPT-5](xu-qiu-fen-xi-he-xi-tong-she-ji/ppt-5.md)
   * [PPT-6](xu-qiu-fen-xi-he-xi-tong-she-ji/ppt-6.md)
   * [个人总结](xu-qiu-fen-xi-he-xi-tong-she-ji/ge-ren-zong-jie.md)
-* [软件工程](ruan-jian-gong-cheng.md)
-  * [Week-2](ruan-jian-gong-cheng/week-2.md)
 * [并行与分布式程序设计](bing-xing-yu-fen-bu-shi-cheng-xu-she-ji.md)
   * [并行算法设计与分析](bing-xing-yu-fen-bu-shi-cheng-xu-she-ji/bing-xing-suan-fa-she-ji-yu-fen-xi.md)
+* [软件工程](ruan-jian-gong-cheng.md)
+  * [Week-2](ruan-jian-gong-cheng/week-2.md)
 
