@@ -44,6 +44,23 @@ for (i = 0; i &lt; n; i++) {
 ```
 
 
+* 并行算法？
+
+###### 版本1：计算任务划分
+*  假定每个核心计算连续n/t个元素的部分和（t为线程数 或处理器数）
+* 例子：n=24，t=8 
+![](/images/并行/2019-04-10_111421.png)
+
+
+```
+int block_length_per_thread = n/t;    
+int start = id * block_length_per_thread;    
+for (i=start; i<start+block_length_per_thread; i++)  {           
+    x = Compute_next_value(…); 
+    sum += x; 
+}
+```
+
 
 
 
