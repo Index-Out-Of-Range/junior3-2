@@ -61,8 +61,76 @@ for (i=start; i<start+block_length_per_thread; i++)  {
 }
 ```
 
+* 发生了什么？
+  * 循环步之间的求和运算存在依赖 → 线程间依赖 
+    * 但可以重排顺序，因为加法运算满足结合律 
+  * 取数-加法-存结果必须是原子操作，以保持结果 与串行执行一致 
+  * 定义 
+    * **原子性**（atomicity）：一组操作要么全部执行要么全不执行，则称其是原子的。即，不会得到部分执行的结果。 
+    * **互斥**（mutual exclusion）：任何时刻都只有一个线程在执行
+
+###### 版本2：加锁 
+* 插入互斥（mutex），保证任何时刻只有一个线程读数-加法-存结果——原子操作
 
 
+```
+int block_length_per_thread = n/t;    
+mutex m; 
+int start = id * block_length_per_thread;    
+for (i=start; i<start+block_length_per_thread; i++)  {           
+    my_x = Compute_next_value(…); 
+    mutex_lock(m);       
+    sum += my_x; mutex_unlock(m);     
+}
+```
+
+> 已经是正确的了，但还不够好
+
+
+###### 版本3：粗粒度
+* 在将局部和加到全局和时才加锁 
+
+
+```
+int block_length_per_thread = n/t;    
+mutex m; 
+int my_sum; 
+int start = id * block_length_per_thread;    
+for (i=start; i<start+block_length_per_thread; i++)  {           
+    my_x = Compute_next_value(…); 
+    my_sum += my_x; 
+} 
+mutex_lock(m);       
+sum += my_sum; mutex_unlock(m);   
+```
+
+###### 版本4：消除锁
+* “主”线程完成部分和相加 
+
+
+```
+int block_length_per_thread = n/t;    
+mutex m; 
+shared my_sum[t]; 
+int start = id * block_length_per_thread;    
+for (i=start; i<start+block_length_per_thread; i++)  {           
+    my_x = Compute_next_value(…); 
+    my_sum[id] += my_x; 
+} 
+if (id == 0) {// 主线程 
+    sum = my_sum[0]; 
+    for (i=1; i<t; i++) 
+        sum += my_sum[i]; 
+} 
+
+```
+
+* 同步方法：障碍
+  * 如果主线程开始计算全局和的时候其他线程还未完成计算，就会得到不正确的结果 
+  * 如何强制主线程等待其他线程完成之后再进行全局和计算呢？
+  * 定义 
+    * 障碍（barrier）阻塞线程继续执行，在此程序点等待，直到所有参与线程都到达障碍点才继续执行 
+    * 障碍如何实现？
 
 ## 并行算法分析
 
