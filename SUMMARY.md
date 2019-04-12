@@ -5,6 +5,7 @@
   * [Week-4](ji-suan-ji-shi-jue/week-4.md)
   * [Week-1](ji-suan-ji-shi-jue/week-1.md)
   * [Matlab学习](ji-suan-ji-shi-jue/matlabxue-xi.md)
+  * [第3章：图像处理](ji-suan-ji-shi-jue/di-3-zhang-ff1a-tu-xiang-chu-li.md)
 * [需求分析和系统设计](xu-qiu-fen-xi-he-xi-tong-she-ji.md)
   * [PPT-1](xu-qiu-fen-xi-he-xi-tong-she-ji/ppt-1.md)
   * [PPT-2](xu-qiu-fen-xi-he-xi-tong-she-ji/week-2.md)
